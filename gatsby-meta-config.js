@@ -1,13 +1,13 @@
 module.exports = {
   title: `Yongineer Blog`,
   description: `This blog post is what I learned about backends and ETC...`,
-  author: `Yogineer`,
+  author: `Yongineer`,
   introduction: `Backend Developer`,
   siteUrl: `https://optimistic-jepsen-f9d493.netlify.app/`, // Your blog site url
   social: {
     twitter: ``, // Your Twitter account
     github: `yongineer1990`, // Your GitHub account
-    medium: ``, // Your Medium account
+    instagram: `yongineer1990`, // Your Medium account
     facebook: ``, // Your Facebook account
     linkedin: ``, // Your LinkedIn account
   },
