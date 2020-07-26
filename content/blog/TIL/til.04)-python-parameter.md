@@ -21,7 +21,7 @@ draft: false
 
 ![](https://images.velog.io/images/yongineer1990/post/18cf1983-c229-4a84-a2ee-4051793b9ed9/image.png)
 
-따라서 [TIL.02) Function of Python ](https://optimistic-jepsen-f9d493.netlify.app/)에서 ✅ Default Parameter의 정의 순서의 아래 코드는
+따라서 [TIL.02) Function of Python ](https://optimistic-jepsen-f9d493.netlify.app/TIL/til.02\)-function-of-python/)에서 ✅ Default Parameter의 정의 순서의 아래 코드는
 ```
 def love_you(my_name = "정우성", your_name): 
     print(f"{my_name} loves {your_name}")
