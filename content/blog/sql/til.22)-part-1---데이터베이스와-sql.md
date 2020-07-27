@@ -1,0 +1,265 @@
+---
+title: TIL.22) Part 1 - 데이터베이스와 SQL
+date: 2020-07-27 23:07:32
+category: SQL
+thumbnail: '../TIL/images/sql.png'
+draft: false
+---
+
+![](../TIL/images/sql.png)
+
+# 데이터베이스
+
+- 데이터란 컴퓨터 안에 기록되어 있는 숫자를 의미하며, 이러한 데이터의 집합을 **데이터베이스**라고 한다.
+- 데이터베이스 내의 데이터는 영구적으로 보존되어야 한다.
+
+## 1. 시스템 내의 데이터베이스
+
+- 과거에는 주로 데이터베이스가 일반적으로 데이터센터의 서버에서 운용했다.
+- 현재는 데이터베이스가 개인용 컴퓨터나 휴대용 기기에 내장되어 있기도 한다.
+
+    💡 휴대전화의 전화번호부
+
+- 데이터베이스는 다양한 시스템에서 사용한다.
+
+## 2. DB와 DBMS
+
+- **DB**
+    - 데이터베이스의 약자
+    - 저장장치 내에 정리되어 저장된 데이터의 집합
+- **DBMS**
+    - 데이터베이스를 효율적으로 관리하는 소프트웨어
+    - 데이터베이스 관리 시스템 (**D**ata**B**ase **M**anagement **S**ystem)의 약자
+
+### **DBMS를 사용하는 이유**
+
+**1) 생산성**
+
+- 데이터 검색, 추가, 갱신과 같은 기본 기능을 제공한다.
+
+**2) 기능성**
+
+- 데이터베이스를 다루는 기능을 제공
+    - 복수 유저의 요청에 대응하는 기능
+    - 대용량의 데이터를 저장하고 고속으로 검색하는 기능
+    - 데이터베이스 관리 기능
+
+**3) 신뢰성**
+
+- 하드웨어를 여러 대로 구성하여 신뢰성을 높이는 동시에 성능 향상을 기대할 수 있다.
+- 실제로 일부 `DBMS`는 컴퓨터 여러 대를 두고 소프트웨어를 통해 확장성(Scalability)과 부하 분산 (Load balancing)을 구현한다.
+- 이를 보통 `클러스터 구성` 또는 `스케일 아웃`이라 부른다.
+
+> 💡 **요약**
+>
+> `DBMS`란 데이터베이스를 관리하는 소프트웨어로, 사용 목적은 생산성 향상과 기능성, 신뢰성 확보에 있다.
+
+## 3. 데이터베이스를 조작하는 언어 SQL
+
+- `DBMS`와 대화의 필요한 것은 SQL
+- SQL을 그중 관계형 데이터베이스 관리 시스템 (`RDBMS` : Relational Database Management System)을 조작할 때 사용
+
+### SQL 명령의 종류
+
+![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/07bb997b-0a15-485c-9ec4-e0380000b797/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200727%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200727T174742Z&X-Amz-Expires=86400&X-Amz-Signature=9bf2c78032d663bba767f2ce568d67c0ff799747b1f6f88d9f58b77fc595c040&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
+
+**1) DML**
+
+- **D**ata **M**anipulation **L**anguage
+- 데이터를 추가하거나 삭제하거나 내용을 갱신하는 등 **데이터를 조작**
+- SQL의 가장 기본이 되는 명령
+
+**2) DDL**
+
+- **D**ata **D**efinition **L**anguage
+- **데이터를 정의**
+- 데이터베이스는 '데이터베이스 객체(Object)'라는 그릇을 이용하여 데이터를 관리하는데 이 같은 객체를 만들거나 삭제하는 명령
+
+**3) DCL**
+
+- **D**ata **C**ontrol **L**anguage
+- **데이터를 제어**
+- 트랜잭션을 제어하는 명령과 데이터 접근권한을 제어하는 명령
+
+# 다양한 데이터베이스
+
+SQL로 데이터를 다루는 데이터베이스를 **관계형 데이터베이스 (`RDB` : Relational Database)**라고 한다.
+
+## 1. 데이터베이스 종류
+
+오래된 순서로 몇몇 `DBMS`를 소개하면 다음과 같다.
+
+### 계층형 데이터베이스
+
+![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0695a160-c867-4a73-a638-3fb7ed3f76c1/Untitled.png](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/0695a160-c867-4a73-a638-3fb7ed3f76c1/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200727%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200727T174936Z&X-Amz-Expires=86400&X-Amz-Signature=6e1413792568a20aca25150a2cd8aac7e39a4d60f7b3adbda219b9c7c229f63a&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
+- 역사가 오래된 `DBMS`
+- 폴더와 파일 등의 계층 구조로 데이터를 저장하는 방식
+- 하드디스크나 DVD 파일시스템
+- 현재 `DBMS`로 채택되는 경우는 많지 않다.
+
+### 관계형 데이터베이스
+
+![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5cd5b6ac-651b-4cdb-90f8-fde5cd5fefd8/Untitled.png](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/5cd5b6ac-651b-4cdb-90f8-fde5cd5fefd8/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200727%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200727T175537Z&X-Amz-Expires=86400&X-Amz-Signature=2a91872c477c264eff5d1c58fbad44101659aefcd8d3617938756934fc079d7c&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
+
+- 관계 대수(Relational algebra)라는 것에 착안하여 고안한 데이터베이스
+- 행과 열을 가지는 표 형식 데이터를 저장하는 형태의 데이터베이스
+- 표 형식 데이터란 2차원 데이터를 말하며 가로방향으로는 '열'을, 세로방향으로는 '행'을 나열한다.
+
+    💡 엑셀 시트
+
+- 표를 잔뜩 저장해두고, 각각의 표에 이름을 붙여 관리
+- 데이터베이스 안의 데이터는 `SQL`명령어로 조작 할 수 있다.
+
+### 객체지향 데이터베이스
+
+- 가능하면 객체 그대로를 데이터베이스의 데이터로 저장하는 것
+
+### XML 데이터베이스
+
+![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/8a9e0cd3-6338-4ad8-bcdd-7e799c08e118/Untitled.png](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/8a9e0cd3-6338-4ad8-bcdd-7e799c08e118/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200727%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200727T175616Z&X-Amz-Expires=86400&X-Amz-Signature=daf548a0dff70dc8271c5be9d9696710e9c3acfc8bc3c6d8c568c12491e51cd6&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
+
+- `XML`이란 자료 형식을 가리키는 용어
+- `HTML`과 흡사
+- `XML`형식으로 기록된 데이터를 저장하는 데이터베이스
+- `SQL`명령어를 사용할 수 없다.
+- `XQuery`라는 전용 명령어를 사용
+
+### 키-밸류 스토어(KVS)
+
+- 키와 그에 상응하는 값(밸류)이라는 단순한 형태의 데이터를 저장하는 데이터베이스
+- 키-밸류 조합은 연상배열이나 해시 테이블(hash table)에서 자주 볼 수 있다.
+- `NoSQL(Not only SQL)`이라는 슬로건으로 부터 생겨난 데이터베이스
+- 열 지향 데이터베이스 라고도 불림
+
+> 💡연상배열
+>
+>- 자료구조의 하나
+>- 키 하나와 값 하나가 연관되어 있는 구조
+>- `map`, `dictionary`
+
+## 2. RDBMS 사용 시스템
+
+- 메인프레임(main frame)은 대부분 사용
+- 최근에는 소형 워크스테이션(workstation)에서도 데이터베이스 서버는 `RDBMS`를 채택하고 이에따라 클라이언트/서버 구조도 유행하기 시작했다.
+- 웹 시스템과 연동하여 `RDBMS`를 사용하는 경우도 매우 많아졌다.
+- 현재는 휴대전화에도 `RDBMS`가 내장 되어있다.
+
+    💡안드로이드의 `SQLite`
+
+## 3. 데이터베이스 제품
+
+오래된 순서대로 나열하면 다음과 같다.
+
+### Oracle
+
+- 오라클에서 개발
+- 현재 가장 많이 쓰이는 `RDBMS`중 하나
+- `RDBMS`의 사실상 표준
+
+### DB2
+
+- IBM이 개발
+- Oracle처럼 역사가 오래된 `RDBMS`
+- DB2는 발표된 이래 한동안 IBM컴퓨터에서만 구동 되었으나 이후 유닉스나 윈도우 등의 플랫폼에서도 DB2를 구동할 수 있게 되었다.
+- 그러나 시장 점유율을 확대할 수는 없었다.
+
+### SQL Server
+
+- 마이크로소프트가 개발
+- 윈도우 플랫폼에서만 동작
+- 윈도우가 서버 분야로 영역을 넓히면서 SQL Server를 사용하는 시스템도 많이 증가함
+
+### PostgreSQL
+
+- 오픈소스 기반
+- 실험적인 기능이 포함되어 있거나 독특한 구조를 가지기도 한다.
+
+### MySQL
+
+- 오픈소스
+- 출시 당시는 경량 데이터베이스라는 점을 강조하다 보니 필요한 최소한의 기능만 갖추었다.
+- 현재는 기능이 확장되면서 다른 `RDBMS`와 비교해도 부족하지 않을 정도
+
+### SQLite
+
+- 오픈소스
+- 임베디드 시스템에 자주 쓰이는 작은 `RDBMS`
+
+## 4. SQL의 방언과 표준화
+
+- 각 테이터베이스 제품들이 기능 확장이 이루어지는 과정에서 특정 데이터베이스 제품에만 통용되는 **고유방언**이 생성됨
+- 따라서 이같은 방언을 없애려는 표준화 시도가 있었다.
+
+    💡ISO, ANSI가 결정한 `SQL-92`, `SQL-99`, `SQL-2003`등 
+
+- 표준 SQL을 사용하는 편이 좋다.
+
+> SQL 방언 예시
+>
+**1️⃣ 키워드 생략**
+>
+`DELETE`명령을 사용하는데 Oracle이나 SQL Server에서는 `DELETE`뒤에 `FROM`을 생략해도 별 다른 문제가 없으나 DB2, PostgreSQL, MySQL에서는 `FROM`을 생략하면 구문 에러가 발생
+>
+**2️⃣ 외부결합**
+>
+Oracle에서는 `+`라는 특별한 연산자를 이용해 외부결합조건을 지정하는 데 비해, SQL Server에서는 `*=`연산자를 이용한다.
+
+# 데이터베이스 서버
+
+## 1. 클라이언트/서버 모델
+
+- **클라이언트** : 사용자 조작에 따라 요청을 전달
+- **서버** : 클라이언트의 요청을 받아 처리
+- 복수의 컴퓨터 상에서 하나의 모델을 구현하는 시스템
+
+### 웹 시스템에서의 클라이언트/서버
+
+- 웹 시스템이란 브라우저와 웹 서버로 구성되는 클라이언트/서버 모델의 시스템
+- 웹 시스템에서 클라이언트 기능은 브라우저가 담당
+- 클라이언트가 보내는 요구사항 : `Request`
+- 웹 서버는 클라이언트의 요청을 받아서 그에 맞게 처리
+- 서버의 응답 : `Response`
+
+### RDBMS의 클라이언트/서버
+
+- **사용자 인증 필요**
+- `RDBMS`는 사용자 별로 데이터베이스 접근을 제한할 수 있다.
+- 사용자 인증은 사용자 ID와 비밀번호로 실행
+
+### SQL명령 실행
+
+- `RDBMS`에 접속하면 SQL 명령을 서버에 보낼 수 있다.
+- 클라이언트에서 SQL 명령을 보낼 때 서버는 응답할 것
+
+## 2. 웹 애플리케이션의 구조
+
+![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f6ff4b67-56f6-4a38-8fc8-95abbd577274/Untitled.png](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/f6ff4b67-56f6-4a38-8fc8-95abbd577274/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200727%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200727T175838Z&X-Amz-Expires=86400&X-Amz-Signature=b3444b424a28a4dea5963063dae8092f9bb43dc518ff0c347d03b32a2f6700b2&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
+
+- 웹 애플리케이션은 일반적으로 웹 서버와 데이터베이스 서버의 조합으로 구축
+- 웹 서버에서 동적으로 `HTML`을 생성하려면 제어용 프로그램이 필요하다.
+- 웹 서버에는 `CGI`라 불리는 동적 콘텐츠를 위한 확장 방식이 있다.
+- 이 `CGI`를 이용하여 프로그램과 웹 서버 간을 연동, 통신하여 처리한다.
+- 데이터베이스에 접속하는 것은 `CGI`프로그램이다.
+- **웹 서버의 `CGI`프로그램이 데이터베이스의 클라이언트**
+- 웹 서버와 데이터베이스 서버를 서로 다른 머신에 두면 처리가 분산되어 시스템 전체 성능이 향상된다.
+- 대규모 시스템에서는 웹 서버나 데이터베이스 서버를 여러 대로 구성하여 운용하는 경우도 많다.
+
+## 3. MySQL 서버와 mysql 클라이언트
+
+- 클라이언트/서버 모델은 시스템의 하드웨어 구성을 유연하게 변경할 수 있도록 해준다.
+- 클라이언트가 많아져 서버의 능력이 부족해지면 추가로 설치하여 부하 분산해 시스템 전체의 성능을 높일 수 있다.
+- PC 한 대로 클라이언트와 서버 모두 실행 하고 클라이언트에서 서버로 접속 할 수 있는데 이때 네트워크를 경유하여 다시 PC의 서버로 되돌아오는 형태로 접속하며 이를 **루프 백 접속**이라 한다.
+
+# Question
+
+### Q1. SQL명령을 사용할 수 있는 데이터베이스
+
+- 관계형 데이터베이스
+
+### Q2. 클라이언트가 데이터베이스 서버에 접속할 때 필요한 것
+
+- 사용자 인증
+
+### Q3. DML, DDL, XML 중 SQL 명령이 아닌것
+
+- XML
