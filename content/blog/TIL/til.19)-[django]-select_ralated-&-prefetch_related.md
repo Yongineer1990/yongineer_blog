@@ -1,7 +1,7 @@
 ---
 title: TIL.19) [django] select_ralated & prefetch_related
 date: 2020-07-27 19:07:42
-category: TIL 
+category: Django
 thumbnail: './images/django.png'
 draft: false
 ---

@@ -1,7 +1,7 @@
 ---
 title: TIL.09) How to web work?
 date: 2020-07-27 03:55:24
-category: TIL
+category: Web
 thumbnail: './images/web.jpg'
 draft: false
 ---

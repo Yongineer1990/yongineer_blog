@@ -1,7 +1,7 @@
 ---
 title: TIL.21) AWS
 date: 2020-07-27 20:54:08
-category: TIL 
+category: AWS 
 thumbnail: './images/aws.png' 
 draft: false
 ---

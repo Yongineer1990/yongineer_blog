@@ -1,7 +1,7 @@
 ---
 title: TIL.16) Database
 date: 2020-07-27 18:44:60
-category: TIL
+category: Database
 thumbnail: './images/database.png' 
 draft: false
 ---

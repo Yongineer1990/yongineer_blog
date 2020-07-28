@@ -1,7 +1,7 @@
 ---
 title: TIL.15) HTTP & RESTful HTTP API
 date: 2020-07-27 18:35:23
-category: TIL
+category: HTTP
 thumbnail: './images/web.jpg'
 draft: false
 ---

@@ -1,7 +1,7 @@
 ---
 title: TIL.18) [Django] ORM
 date: 2020-07-27 18:55:44
-category: TIL 
+category: Django
 thumbnail: './images/django.png'
 draft: false
 ---

@@ -1,7 +1,7 @@
 ---
 title: TIL.14) [Django] Tutorial, Part.2
 date: 2020-07-27 18:18:47
-category: TIL 
+category: Django
 thumbnail: './images/django.png'
 draft: false
 ---

@@ -1,7 +1,7 @@
 ---
 title: TIL.20) Git Tutorial
 date: 2020-07-27 20:07:33
-category: TIL 
+category: Git 
 thumbnail: './images/git.png'
 draft: false
 ---

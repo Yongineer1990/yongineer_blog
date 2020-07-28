@@ -1,7 +1,7 @@
 ---
 title: TIL.11) [Data Structure] 1. Intro, Array & Tuple
 date: 2020-07-27 17:07:67
-category: TIL
+category: Data Structure
 thumbnail: './images/Data Structure.png'
 draft: false
 ---

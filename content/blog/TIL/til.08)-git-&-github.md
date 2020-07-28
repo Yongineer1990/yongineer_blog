@@ -1,7 +1,7 @@
 ---
 title: TIL.08) Git & Github
 date: 2020-07-27 03:51:33
-category: TIL
+category: Git
 thumbnail: './images/git.png'
 draft: false
 ---

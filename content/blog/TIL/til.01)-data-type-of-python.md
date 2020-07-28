@@ -1,7 +1,7 @@
 ---
 title: TIL.01) Data type of Python
 date: 2020-07-27 01:07:38
-category: TIL
+category: Python 
 thumbnail: './images/python.png'
 draft: false
 ---

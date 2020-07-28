@@ -1,7 +1,7 @@
 ---
 title: TIL.02) Function of Python
 date: 2020-07-27 02:07:58
-category: TIL
+category: Python
 thumbnail: './images/python.png' 
 draft: false
 ---

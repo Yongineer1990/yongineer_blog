@@ -1,7 +1,7 @@
 ---
 title: TIL.03) CSS Layout
 date: 2020-07-27 02:07:66
-category: TIL 
+category: CSS 
 thumbnail: './images/CSS3.png'
 draft: false
 ---

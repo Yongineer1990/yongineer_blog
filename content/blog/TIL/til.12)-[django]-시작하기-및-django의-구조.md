@@ -1,7 +1,7 @@
 ---
 title: TIL.12) [Django] 시작하기 및 Django의 구조
 date: 2020-07-27 17:59:35
-category: TIL
+category: Django
 thumbnail: './images/django.png'
 draft: false
 ---

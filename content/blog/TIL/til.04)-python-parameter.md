@@ -1,7 +1,7 @@
 ---
 title: TIL.04) Python Parameter
 date: 2020-07-27 02:07:90
-category: TIL
+category: Python
 thumbnail: './images/python.png' 
 draft: false
 ---

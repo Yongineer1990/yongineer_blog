@@ -1,7 +1,7 @@
 ---
 title: TIL.10)[Django] 시작하기전 알아두어야 할 개념들
 date: 2020-07-27 14:07:18
-category: TIL
+category: Django
 thumbnail: './images/django.png'
 draft: false
 ---

@@ -1,7 +1,7 @@
 ---
 title: TIL.06) [Python] Nested Function & Decorator
 date: 2020-07-27 03:07:61
-category: TIL
+category: Python
 thumbnail: './images/python.png'
 draft: false
 ---

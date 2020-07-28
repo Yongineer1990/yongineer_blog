@@ -1,7 +1,7 @@
 ---
 title: TIL.05) [Python]Module & Package
 date: 2020-07-27 03:07:44
-category: TIL
+category: Python
 thumbnail: './images/python.png'
 draft: false
 ---
