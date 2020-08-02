@@ -37,7 +37,7 @@ def solution(participant, completion):
 
 인자로 전달받은 `completion`의 요소를 하나씩 `participant` 리스트에 있는지 확인하고 있다면 `remove`를 통해 제거한 후 `answer`에 담아 반환했다.
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5b86f243-91b0-4892-8f3e-2b9770200654/Untitled.png](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/5b86f243-91b0-4892-8f3e-2b9770200654/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200731%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200731T093957Z&X-Amz-Expires=86400&X-Amz-Signature=9676043da156fa19016a5145ba332f564a82e6d01f44f05bf6414fac0896c27c&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
+![](https://yongnas.iptime.org/python/til25_1.png)
 
 그러나 정확성 테스트에서는 통과했으나 매우 효율적이지 않다는 결과가 나왔다.
 
@@ -55,7 +55,7 @@ def solution(participant, completion):
 
 `participant`와 `completion`모두 정렬 후에 `completion`의 크기 만큼 for loop을 실행하여 `participant`와 `completion`을 비교하다 만약 같지 않는 결과가 나온다면 해당 요소를 반환하고 만약 `completion`의 모든 요소와 비교를 끝냈으나 아직 비교를 하지 않은 `participant` 요소가 있다면 해당 요소가 완주하지 못한 선수이므로 해당 요소를 반환했다.
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/861e113a-c671-4a23-a65c-94fc28f9081d/Untitled.png](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/861e113a-c671-4a23-a65c-94fc28f9081d/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200731%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200731T094104Z&X-Amz-Expires=86400&X-Amz-Signature=df66bcc24bad89a72b84ebc456818f9c9fbd55a7b5c677a4c36b4e84bee421d1&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
+![](https://yongnas.iptime.org/python/til25_2.png)
 
 # 놀라운 해답
 
@@ -82,7 +82,7 @@ def solution(participant, completion):
 
 결과는?
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ffd7ceae-7a30-4588-ae57-5ee1e3e61775/Untitled.png](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/ffd7ceae-7a30-4588-ae57-5ee1e3e61775/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200731%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200731T094206Z&X-Amz-Expires=86400&X-Amz-Signature=88de268af4808b1838894dcbe8057e6cd71df99cea3ccca6115ad7a70b070716&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
+![](https://yongnas.iptime.org/python/til25_3.png)
 
 모든 테스트에서 나의 해결방법보다 더 빠르게 결과를 반환하는 것을 볼 수 있다. 대단하다...
 

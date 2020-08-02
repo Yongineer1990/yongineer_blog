@@ -16,15 +16,15 @@ SELECT * FROM 테이블명;
 
 ## 1. 'SELECT * FROM 테이블명' 실행하기
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7146ad91-65bd-42ef-a9e5-f26d2d50981f/Untitled.png](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/7146ad91-65bd-42ef-a9e5-f26d2d50981f/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200728%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200728T154543Z&X-Amz-Expires=86400&X-Amz-Signature=3825b66769080c76becd10640ef9cd95442e47c5e050bab5e67e3695291a3483&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
+![](https://yongnas.iptime.org/sql/6.png)
 
 - `SELECT`와 `*`그리고 `FROM`사이에는 Space를 넣어 구분
 - `FROM`과 `sample21`사이에도 Space가 필요
 - `;`은 명령의 마지막을 나타낸다.
 
 > 만약 `;`을 붙이지 않고 명령 실행 시 아직 입력 중인 것으로 간주 된다.
-
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4fdee886-307e-4de2-9c9f-a66e77a27c49/Untitled.png](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/4fdee886-307e-4de2-9c9f-a66e77a27c49/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200728%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200728T154635Z&X-Amz-Expires=86400&X-Amz-Signature=8ee838124328c353d9f737b01da8b93e89591aadfb1fb364cbfd91ec82c09075&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
+>
+![](https://yongnas.iptime.org/sql/7.png)
 
 ## 2. SELECT 명령 구문
 
@@ -179,7 +179,7 @@ SELECT 열 FROM 테이블명 WHERE 조건식;
 
 ### WHERE 구
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/74eb94db-42a4-4043-82ab-88a824af05d8/Untitled.png](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/74eb94db-42a4-4043-82ab-88a824af05d8/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200728%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200728T154749Z&X-Amz-Expires=86400&X-Amz-Signature=9b23f6a7e18ee06a83ce95fe1c22416487252631ed129eacc9858c43834a9dc0&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
+![](https://yongnas.iptime.org/sql/8.png)
 
 - 조건식 : 열과 연산자, 상수로 구성되는 식
 - 조건식에 일치하는 행만 `SELECT`의 결과로 반환
@@ -193,13 +193,13 @@ SELECT 열 FROM 테이블명 WHERE 조건식;
 
 ### 값이 서로 다른 경우 '<>'
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/27e7fc8a-1b1a-4954-9c3d-45544204b5d2/Untitled.png](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/27e7fc8a-1b1a-4954-9c3d-45544204b5d2/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200728%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200728T154818Z&X-Amz-Expires=86400&X-Amz-Signature=86289edc57feecd77444ec0b386f0647b1a026627719e8923a40f2a00e124be5&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
+![](https://yongnas.iptime.org/sql/9.png)
 
 - `<>`연산자는 값이 서로 다른 경우 참이 되는 조건식
 
 ## 3. 문자열형의 상수
 
-![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/f196b5d5-9914-44cb-8359-9ac1251fc247/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200728%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200728T154908Z&X-Amz-Expires=86400&X-Amz-Signature=f31fd91b0cd1ef9d8d2450b9f56c5498df2ff8f079dbec5617f99850c893ec95&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
+![](https://yongnas.iptime.org/sql/10.png)
 
 - **싱글쿼트(`' '`)로 둘러싸 표기**
 - 날짜시간형의 경우에도 `' '`로 둘러싸 표기하며 이때 연월일은 하이픈(`-`)으로 구분하고 시각의 시분초는 콜론(`:`)으로 구분하여 표기
@@ -212,7 +212,7 @@ SELECT 열 FROM 테이블명 WHERE 조건식;
 
 ### IS NULL
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c2f2fde3-e195-4404-9e06-6735f5f524af/Untitled.png](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/c2f2fde3-e195-4404-9e06-6735f5f524af/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200728%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200728T154937Z&X-Amz-Expires=86400&X-Amz-Signature=a2cb0883382c90142f404cdcf37b402ac3be9477d8ce2589e464550f46114e56&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
+![](https://yongnas.iptime.org/sql/11.png)
 
 - `IS NULL`을 사용하여 검색
 - 반대로 `NULL`이 아닌 값을 행을 검색할 때는 `IS NOT NULL`
@@ -234,11 +234,11 @@ SELECT 열 FROM 테이블명 WHERE 조건식;
 NOT 조건식1
 ```
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1e41c030-025a-44d9-9203-4263ab62128c/Untitled.png](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/1e41c030-025a-44d9-9203-4263ab62128c/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200728%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200728T155014Z&X-Amz-Expires=86400&X-Amz-Signature=e0354aa2429d1ab87a00ce3ef002cfe5c3bc74af5c9ae03603420a66cd4af1cb&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
+![](https://yongnas.iptime.org/sql/and_or_not.png)
 
 ## 1. AND로 조합하기
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3c5d8d17-c947-4f54-ab5b-51d4b5c5ae83/Untitled.png](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/3c5d8d17-c947-4f54-ab5b-51d4b5c5ae83/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200728%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200728T155045Z&X-Amz-Expires=86400&X-Amz-Signature=fb7e2704a934186adc6ba4fb174f759ba1689f2741bf63ac7e4d25e7ea4f34c3&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
+![](https://yongnas.iptime.org/sql/12.png)
 
 - **좌우의 식이 모두 참일 경우** AND연산자는 참을 반환한다.
 - '및'에 해당
@@ -247,7 +247,7 @@ NOT 조건식1
 
 ## 2. OR로 조합하기
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e5b38c1f-9c9b-48c2-8d62-f4c68ed7b32d/Untitled.png](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/e5b38c1f-9c9b-48c2-8d62-f4c68ed7b32d/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200728%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200728T155108Z&X-Amz-Expires=86400&X-Amz-Signature=ba6765ceff8b294cf02cb7524a6347e805173ce6478023225a57fa6a77ac6c2c&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
+![](https://yongnas.iptime.org/sql/13.png)
 
 - **어느 쪽이든 조건을 만족하면 결과는 참이 된다.**
 - '또는'에 해당
@@ -279,7 +279,7 @@ SELECT * FROM sample24 WHERE a=1 OR a=2 AND b=1 OR b=2;
 
 그러나 앞서 AND연산자 예시의 결과와는 다른 것을 확인 할 수 있다. 
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9db60c46-7b3b-402d-b3d8-71233f7ba3e0/Untitled.png](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/9db60c46-7b3b-402d-b3d8-71233f7ba3e0/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200728%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200728T155148Z&X-Amz-Expires=86400&X-Amz-Signature=767f85b0197769144bec15d340b1523a3b48083c86cd696e4e4f96a79a278e6d&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
+![](https://yongnas.iptime.org/sql/14.png)
 
 이는 **연산자의 계산 우선 순위가 다르기 때문**이다.
 
@@ -296,7 +296,7 @@ SELECT * FROM sample24 WHERE a=1 OR a=2 AND b=1 OR b=2;
 SELECT * FROM sample24 WHERE (a=1 OR a=2) AND (b=1 OR b=2);
 ```
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a772c3b6-3c3a-41c9-9134-3001808b65e9/Untitled.png](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/a772c3b6-3c3a-41c9-9134-3001808b65e9/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200728%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200728T155218Z&X-Amz-Expires=86400&X-Amz-Signature=94dffb44aea5c96b536bd980192e4df6574ec9ad668b58dc3646881f2402d5ea&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
+![](https://yongnas.iptime.org/sql/15.png)
 
 - 일반적으로 `OR`조건식은 괄호로 묶어 지정하는 경우가 많다.
 
@@ -304,7 +304,7 @@ SELECT * FROM sample24 WHERE (a=1 OR a=2) AND (b=1 OR b=2);
 
 ## 4. NOT으로 조합
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0a3fdc75-111d-49d9-ac2c-e428bbc1740c/Untitled.png](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/0a3fdc75-111d-49d9-ac2c-e428bbc1740c/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200728%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200728T155314Z&X-Amz-Expires=86400&X-Amz-Signature=754752e75d3e708dd595df14262ab0c1baccb95e74584ad15c0c0da665bd2f85&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
+![](https://yongnas.iptime.org/sql/16.png)
 
 - 단항 연산자
 - 조건식의 반대 값을 반환
@@ -336,7 +336,7 @@ SELECT * FROM sample24 WHERE (a=1 OR a=2) AND (b=1 OR b=2);
 
 'SQL'이라는 문자를 포함한 데이터를 검색한다.
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/56aa7d51-4dcc-4c3f-9207-b21bcf303d8e/Untitled.png](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/56aa7d51-4dcc-4c3f-9207-b21bcf303d8e/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200728%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200728T155350Z&X-Amz-Expires=86400&X-Amz-Signature=6433bb5dde0bce0abaa84613bc7932e55e9c09f28bdfdf34d48351893f3f4d7a&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
+![](https://yongnas.iptime.org/sql/17.png)
 
 하지만 `no`가 3인 행에도 `text`에 'SQL'이 포함되어 있으나 검색되지 않은걸 알 수 있는데 이는 시작문자가 'SQL'이 아니기 때문이다. 
 
@@ -346,7 +346,7 @@ SELECT * FROM sample24 WHERE (a=1 OR a=2) AND (b=1 OR b=2);
 SELECT * FROM sample25 WHERE text LIKE '%SQL%';
 ```
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/378d84fb-f3f8-431e-84db-db7f1e12fbfe/Untitled.png](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/378d84fb-f3f8-431e-84db-db7f1e12fbfe/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200728%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200728T155414Z&X-Amz-Expires=86400&X-Amz-Signature=89159e198ba1c28bdd293e96eb5339b068089fd154d4e038645b1beeccbb2a67&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
+![](https://yongnas.iptime.org/sql/18.png)
 
 여기서 핵심은 메타문자 %가 빈 문자열과도 매치 되는 것이다. `no`의 값 1번의 행의 `text`의 경우 'SQL'앞에 `%`와 매치되는 문자열은 없는데도 검색이 되었다.
 
@@ -372,7 +372,7 @@ SELECT * FROM sample25 WHERE text LIKE '%SQL%';
 WHERE text LIKE '%\%%';
 ```
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f2c240fe-65e4-416b-a50c-d410537528c1/Untitled.png](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/f2c240fe-65e4-416b-a50c-d410537528c1/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200728%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200728T155521Z&X-Amz-Expires=86400&X-Amz-Signature=5e6f6507ea72ffb634ea0af1a455ec35c466f305a88198433b319203e36d57cc&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
+![](https://yongnas.iptime.org/sql/19.png)
 
 - 맨 앞의 `%`는 메타문자
 - 그 다음 `%`는 앞에 `\`가 있어 이스케이프 되어 일반 문자 '%"가 되었다.

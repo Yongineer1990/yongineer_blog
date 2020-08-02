@@ -61,7 +61,7 @@ draft: false
 
 ### SQL 명령의 종류
 
-![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/07bb997b-0a15-485c-9ec4-e0380000b797/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200727%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200727T174742Z&X-Amz-Expires=86400&X-Amz-Signature=9bf2c78032d663bba767f2ce568d67c0ff799747b1f6f88d9f58b77fc595c040&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
+![](http://yongnas.iptime.org/sql/1.png)
 
 **1) DML**
 
@@ -91,7 +91,8 @@ SQL로 데이터를 다루는 데이터베이스를 **관계형 데이터베이�
 
 ### 계층형 데이터베이스
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0695a160-c867-4a73-a638-3fb7ed3f76c1/Untitled.png](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/0695a160-c867-4a73-a638-3fb7ed3f76c1/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200727%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200727T174936Z&X-Amz-Expires=86400&X-Amz-Signature=6e1413792568a20aca25150a2cd8aac7e39a4d60f7b3adbda219b9c7c229f63a&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
+![](http://yongnas.iptime.org/sql/2.png)
+
 - 역사가 오래된 `DBMS`
 - 폴더와 파일 등의 계층 구조로 데이터를 저장하는 방식
 - 하드디스크나 DVD 파일시스템
@@ -99,7 +100,7 @@ SQL로 데이터를 다루는 데이터베이스를 **관계형 데이터베이�
 
 ### 관계형 데이터베이스
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5cd5b6ac-651b-4cdb-90f8-fde5cd5fefd8/Untitled.png](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/5cd5b6ac-651b-4cdb-90f8-fde5cd5fefd8/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200727%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200727T175537Z&X-Amz-Expires=86400&X-Amz-Signature=2a91872c477c264eff5d1c58fbad44101659aefcd8d3617938756934fc079d7c&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
+![](http://yongnas.iptime.org/sql/3.png)
 
 - 관계 대수(Relational algebra)라는 것에 착안하여 고안한 데이터베이스
 - 행과 열을 가지는 표 형식 데이터를 저장하는 형태의 데이터베이스
@@ -116,7 +117,7 @@ SQL로 데이터를 다루는 데이터베이스를 **관계형 데이터베이�
 
 ### XML 데이터베이스
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/8a9e0cd3-6338-4ad8-bcdd-7e799c08e118/Untitled.png](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/8a9e0cd3-6338-4ad8-bcdd-7e799c08e118/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200727%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200727T175616Z&X-Amz-Expires=86400&X-Amz-Signature=daf548a0dff70dc8271c5be9d9696710e9c3acfc8bc3c6d8c568c12491e51cd6&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
+![](http://yongnas.iptime.org/sql/4.png)
 
 - `XML`이란 자료 형식을 가리키는 용어
 - `HTML`과 흡사
@@ -233,7 +234,7 @@ Oracle에서는 `+`라는 특별한 연산자를 이용해 외부결합조건을
 
 ## 2. 웹 애플리케이션의 구조
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f6ff4b67-56f6-4a38-8fc8-95abbd577274/Untitled.png](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/f6ff4b67-56f6-4a38-8fc8-95abbd577274/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200727%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200727T175838Z&X-Amz-Expires=86400&X-Amz-Signature=b3444b424a28a4dea5963063dae8092f9bb43dc518ff0c347d03b32a2f6700b2&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
+![](http://yongnas.iptime.org/sql/5.png)
 
 - 웹 애플리케이션은 일반적으로 웹 서버와 데이터베이스 서버의 조합으로 구축
 - 웹 서버에서 동적으로 `HTML`을 생성하려면 제어용 프로그램이 필요하다.

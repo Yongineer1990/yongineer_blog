@@ -121,7 +121,7 @@ print(plus_ten(1))
 
 > ⚠️ 일반함수 vs 람다표현식
 >
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1f8623a9-a962-496f-9735-8c047ac10c39/Untitled.png](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/1f8623a9-a962-496f-9735-8c047ac10c39/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200731%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200731T190210Z&X-Amz-Expires=86400&X-Amz-Signature=1177df3557d5a5df60ed0dcf1c0bc32a444ae39247609bc200d49fcb92300d33&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
+![](https://yongnas.iptime.org/python/til26_1.png)
 
 ## 2. 람다 표현식 자체를 호출하기
 
@@ -248,7 +248,7 @@ print(result)
 
 위 예제는 요소가 2의 배수일 때는 문자열로 만들어 변환했고, 2의 배수가 아닐 때는 x값 그대로 반환했다.
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/392620d7-a9eb-442c-9638-70c085599ad5/Untitled.png](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/392620d7-a9eb-442c-9638-70c085599ad5/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200731%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200731T190522Z&X-Amz-Expires=86400&X-Amz-Signature=d8fc093ecc9765a71202dcc17f8a388bc11133f2d380d166187c8647c5bd88b6&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
+![](https://yongnas.iptime.org/python/til26_2.png)
 
 # map( )
 
@@ -312,7 +312,8 @@ print(result)
 
 이때 람다표현식을 사용하여 `filter`안에 `lambda x: x > 5 and x < 10`를 넣어주면 `def`함수를 작성하지 않고 간단하게 해당 요소를 가져올 수 있다.
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/8cca1906-c5c0-4fba-b513-84e836e62246/Untitled.png](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/8cca1906-c5c0-4fba-b513-84e836e62246/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200731%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200731T190626Z&X-Amz-Expires=86400&X-Amz-Signature=919f49348f72533c7bba13fbbd4e8d14e0ffe5246f346688df4457399b3afcff&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
+
+![](https://yongnas.iptime.org/python/til26_3.png)
 
 # reduce( )
 
@@ -338,7 +339,8 @@ print(result)
 
 `lambda x, y: x + y`와 같이 매개변수 `x`, `y`를 지정한 뒤 `x+y`의 결과를 반환하도록 만들었다.
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b3221f23-646c-46e1-8a5e-0577cecbef17/Untitled.png](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b3221f23-646c-46e1-8a5e-0577cecbef17/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200731%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200731T190649Z&X-Amz-Expires=86400&X-Amz-Signature=780526e8c26d0c56ea614dead2172471c940307c80c31304aa8a87dfa2084ae9&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
+
+![](https://yongnas.iptime.org/python/til26_4.png)
 
 # 그런데 map lambda는 최선일까?
 

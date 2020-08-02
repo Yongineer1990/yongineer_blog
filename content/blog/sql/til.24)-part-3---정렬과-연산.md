@@ -26,11 +26,8 @@ SELECT 열명 FROM 테이블명 WHERE 조건식 ORDER BY 열명;
     ```sql
     SELECT 열명 FROM 테이블명 ORDER BY 열명;
     ```
-
-    ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0ebfeb03-3a12-4124-886a-6a6c4e26fb4c/Untitled.png](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/0ebfeb03-3a12-4124-886a-6a6c4e26fb4c/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200729%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200729T165047Z&X-Amz-Expires=86400&X-Amz-Signature=31d5279f024f98413bcbae462a0070d2d323c338d43b14e774da112d57f186eb&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
-
-    ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6ef14195-2b78-467d-bd4d-449bc283e44e/Untitled.png](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/6ef14195-2b78-467d-bd4d-449bc283e44e/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200729%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200729T165126Z&X-Amz-Expires=86400&X-Amz-Signature=3e2c49168a31cb948a2bbccb4f1d899541f7ca56203ea4fc5f342dcb48a7048b&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
-
+    ![](https://yongnas.iptime.org/sql/til24_1.png)
+    ![](https://yongnas.iptime.org/sql/til24_2.png)
 ## 2. ORDER BY DESC로 내림차순으로 정렬하기
 
 ```sql
@@ -46,11 +43,11 @@ SELECT 열명 FROM 테이블명 ORDER BY 열명 ASC;
 - `ASC` : **ASC**endant
 - 정렬방법을 지정하지 않은 경우에는 `ASC`로 간주하며 `ORDER BY`의 기본 정렬방법은 오름차순
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b82c4fb8-c10e-43ed-8fc5-8b2f29603e0a/Untitled.png](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b82c4fb8-c10e-43ed-8fc5-8b2f29603e0a/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200729%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200729T165240Z&X-Amz-Expires=86400&X-Amz-Signature=504aa5f95e716c4d0ffcc56f98a2652f7affc2cb5215ff031799b9dc7dcd7291&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
+![](https://yongnas.iptime.org/sql/til24_3.png)
 
 *`age`열의 값을 `DESC`로 내림차순 정렬*
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/58578eae-d55b-484c-994c-99beb300f945/Untitled.png](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/58578eae-d55b-484c-994c-99beb300f945/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200729%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200729T165755Z&X-Amz-Expires=86400&X-Amz-Signature=efe2e52b689aa4db8884136e28e127073bc8356438510bbbba55d8c22c97a6b2&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
+![](https://yongnas.iptime.org/sql/til24_4.png)
 
 *`age`열의 값을 `ASC`로 오름차순 정렬*
 
@@ -72,7 +69,7 @@ SELECT 열명 FROM 테이블명 ORDER BY 열명 ASC;
 
 ### 사전식 순서에서 주의할 점
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7eeb25cd-1b65-4123-97ae-f83200b9d7a6/Untitled.png](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/7eeb25cd-1b65-4123-97ae-f83200b9d7a6/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200729%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200729T165923Z&X-Amz-Expires=86400&X-Amz-Signature=f0e7f69c8fdbfca78d421890f5828382c6a6967ce0d839c66de729966921b84c&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
+![](https://yongnas.iptime.org/sql/til24_5.png)
 
 *`a`열을 오름차순으로 정렬*
 
@@ -99,11 +96,10 @@ SELECT 열명 FROM 테이블명 WHERE 조건식 ORDER BY 열명1 [ASC|DESC], 열
 
 같은 값을 가진 행의 순서나 `ORDER BY`를 생략 했을때의 순서는 일정하지 않다. 따라서 언제나 같은 순서로 결과를 얻고 싶다면 반드시 `ORDER BY`구로 순서를 지정해야 한다.
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5b24fed7-aa5c-4803-88e8-8771bcb3dc89/Untitled.png](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/5b24fed7-aa5c-4803-88e8-8771bcb3dc89/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200729%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200729T170519Z&X-Amz-Expires=86400&X-Amz-Signature=0733de02990efef804612e74bacb66e60887aa457649f839c75c99c68e10024c&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
-
+![](https://yongnas.iptime.org/sql/til24_6.png)
 위 테이블은 `a`와 `b`모두 `INTEGER`형이며 `b`열은 `a`열의 하위 번호이다 이를 `a`열만을 이용하여 '1-1, 1-2, 1-3, 2-1, 2-2'와 같이 정렬하려 한다.
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ed8023d9-2bea-4995-bec4-305e932cb883/Untitled.png](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/ed8023d9-2bea-4995-bec4-305e932cb883/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200729%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200729T170547Z&X-Amz-Expires=86400&X-Amz-Signature=f8544045cc2a5e7186cf2ea9f2cb8b2fc04c287e5fd1e354e307ec603e6601a7&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
+![](https://yongnas.iptime.org/sql/til24_7.png)
 
 *`a`열만으로 정렬하기*
 
@@ -119,13 +115,13 @@ SELECT 열명 FROM 테이블명 WHERE 조건식 ORDER BY 열명1 [ASC|DESC], 열
 - 정렬 순서는 지정한 열명의 순서를 따른다.
 - 값이 같아 순서를 결정할 수 없는 경우에는 다음으로 지정한 열명을 기준으로 정렬한다.
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3cfb03c7-1aaf-417f-a52d-ec807233589f/Untitled.png](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/3cfb03c7-1aaf-417f-a52d-ec807233589f/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200729%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200729T170640Z&X-Amz-Expires=86400&X-Amz-Signature=d9095a051bac85b9b80563a91b86abb73af4a9c0b217e585a3926b531c766c5f&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
+![](https://yongnas.iptime.org/sql/til24_8.png)
 
 *`a`열과 `b`열로 정렬하기*
 
 > ⚠️ 위 예제에서 `a`와 `b`의 순서를 바꾸면
 >
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2a223c51-3ebf-46ec-99e9-91b6fb4d3741/Untitled.png](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/2a223c51-3ebf-46ec-99e9-91b6fb4d3741/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200729%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200729T170722Z&X-Amz-Expires=86400&X-Amz-Signature=8bbb4f923e3c8888f1f4df954c5aa7bcf174e0bba036707428d0e743082c613e&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
+![](https://yongnas.iptime.org/sql/til24_9.png)
 >
 *`b`열과 `a`열로 정렬하기*
 >
@@ -136,8 +132,7 @@ SELECT 열명 FROM 테이블명 WHERE 조건식 ORDER BY 열명1 [ASC|DESC], 열
 ```sql
 SELECT 열명 FROM 테이블명 WHERE 조건식 ORDER BY 열명1 [ASC|DESC], 열명2 [ASC|DESC]...
 ```
-
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3c0a89f5-4903-4af6-b617-f446b2acd68c/Untitled.png](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/3c0a89f5-4903-4af6-b617-f446b2acd68c/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200729%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200729T171720Z&X-Amz-Expires=86400&X-Amz-Signature=5f7c19596f76ae0be4d8a3507cc29bca298afe25a48b6ed4fb3a7ee0bf70a87d&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
+![](https://yongnas.iptime.org/sql/til24_10.png)
 
 *`a`열은 `ASC`로 `b`열은 `DESC`로 정렬*
 
@@ -165,8 +160,7 @@ SELECT 열명 FROM 테이블명 LIMIT 행수 [OFFSET 시작행];
 ```sql
 SELECT 열명 FROM 테이블명 WHERE 조건식 ORDER BY 열명 LIMIT 행수 [OFFSET 시작행];
 ```
-
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a2bc7c8d-3713-4f48-af90-14f859271746/Untitled.png](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/a2bc7c8d-3713-4f48-af90-14f859271746/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200729%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200729T171815Z&X-Amz-Expires=86400&X-Amz-Signature=fdc2ea3d2ad67c01b89152d05ce25a7155e92939c7d4ac9712336712b625d9ed&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
+![](https://yongnas.iptime.org/sql/til24_11.png)
 
 - `LIMIT`으로 지정하는 것은 최대 행수이다.
 - 만약 테이블에 하나의 행만 있다면 `LIMIT 3`으로 지정해도 1개의 행이 반환된다.
@@ -175,7 +169,7 @@ SELECT 열명 FROM 테이블명 WHERE 조건식 ORDER BY 열명 LIMIT 행수 [OF
 
 `LIMIT 3`과 동일한 결과를 얻기 위해 `WHERE no <= 3`과 같은 조건식을 붙인다면 동일한 결과를 얻을 수 있으나 `**ORDER BY`로 정렬한 뒤 결과를 얻고자 한다면 내부 처리 순서가 달라 원하는 결과를 얻을 수 없다.**
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/016738bb-d9f0-43ec-9862-597e9d41a059/Untitled.png](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/016738bb-d9f0-43ec-9862-597e9d41a059/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200729%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200729T171900Z&X-Amz-Expires=86400&X-Amz-Signature=274c1317ae66e20cc443c22074ab79cc09cb6ecb32e4fbeef9d25614008c422e&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
+![](https://yongnas.iptime.org/sql/til24_12.png)
 
 *테이블을 정렬 후 `LIMIT 3`으로 상위 3건만 취득하기*
 
@@ -198,8 +192,7 @@ SELECT 열명 FROM 테이블명 WHERE 조건식 ORDER BY 열명 LIMIT 행수 [OF
 ```sql
 SELECT 열명 FROM 테이블명 WHERE 조건식 ORDER BY 열명 LIMIT 행수 OFFSET 위치;
 ```
-
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6c229ba5-1e4f-4b00-8550-d440e48c8183/Untitled.png](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/6c229ba5-1e4f-4b00-8550-d440e48c8183/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200729%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200729T171933Z&X-Amz-Expires=86400&X-Amz-Signature=e1ffbcec506527ed10712b7f878e607a27e9c5b5435f5908c1c0ef75a2855563&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
+![](https://yongnas.iptime.org/sql/til24_13.png)
 
 *`LIMIT 3 OFFSET 3`으로 데이터 표시*
 
@@ -207,7 +200,7 @@ SELECT 열명 FROM 테이블명 WHERE 조건식 ORDER BY 열명 LIMIT 행수 OFF
 
 ## 1. 사칙 연산
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/932dee5f-8bc6-4681-ab1d-f3cf0eebcc54/Untitled.png](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/932dee5f-8bc6-4681-ab1d-f3cf0eebcc54/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200729%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200729T172011Z&X-Amz-Expires=86400&X-Amz-Signature=5774f36caa8adbe60eda316e2bc007c02e2b567bfad29bf3927650ef52e3cf48&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
+![](https://yongnas.iptime.org/sql/til24_14.png)
 
 - `%` 대신 `MOB`함수를 사용하는 경우도 있다.
 
@@ -222,13 +215,13 @@ SELECT 열명 FROM 테이블명 WHERE 조건식 ORDER BY 열명 LIMIT 행수 OFF
 SELECT 식1, 식2 ... FROM 테이블명
 ```
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/994d3cbb-33e7-4673-b37b-41b3c0ffd0ff/Untitled.png](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/994d3cbb-33e7-4673-b37b-41b3c0ffd0ff/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200729%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200729T172041Z&X-Amz-Expires=86400&X-Amz-Signature=7f3fce0dd40be23af01bcde4b2b73a79a26776762212b0ea2f5133d5bcbf5539&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
+![](https://yongnas.iptime.org/sql/til24_15.png)
 
 *가격 * 수량으로 금액 계산 하기*
 
 ## 3. 열의 별명
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/262723d2-2724-468a-8845-c8d05076eb18/Untitled.png](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/262723d2-2724-468a-8845-c8d05076eb18/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200729%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200729T172104Z&X-Amz-Expires=86400&X-Amz-Signature=4d6730a3b40a2e03af675f97befb27bbbfe9b3c3e35954e14f6314a8e7fe9fcb&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
+![](https://yongnas.iptime.org/sql/til24_16.png)
 
 - 예약어 `AS`를 사용해 지정
 - 복수의 식이 존재 할 경우 각각의 식에 별명을 붙일 수 있다.
@@ -255,7 +248,7 @@ SELECT 식1, 식2 ... FROM 테이블명
 
 `SELECT`구에서 `amount`라는 별멍을 붙였으므로 `WHERE`구에서도 `amount`로 지정하면 되지 않을까 생각할 수도 있지만 실제로 `SELECT price * quantity "SELECT" FROM sample34 WHERE**amount>=2000**;` 실행해보면 다음과 같은 에러가 발생한다.
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d90a0da0-d524-4400-bfe9-67df832471a1/Untitled.png](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/d90a0da0-d524-4400-bfe9-67df832471a1/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200729%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200729T172155Z&X-Amz-Expires=86400&X-Amz-Signature=90cf5a5cccff9934dfa0b3d7b443a51bb7ee8054d4ed6990c789062f2e731bfd&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
+![](https://yongnas.iptime.org/sql/til24_17.png)
 
 이는 **내부처리 순서에 의해 불가능**하다.
 
@@ -265,7 +258,7 @@ SELECT 식1, 식2 ... FROM 테이블명
 - 별명은 `SELECT`구문을 내부 처리 할때 붙여진다. 즉, `WHERE`구의 처리는 `SELECT`구보다 선행되므로 `WHERE`구에서 사용한 별칭은 아직 내부적으로 지정되지 않은 상태라 에러가 발생하게 된다.
 - 따라서, `**SELECT`구에서 지정한 별명은 `WHERE`구 안에서 사용할 수 없다.**
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/30e049df-fd7f-4e06-9dce-a026658e30ab/Untitled.png](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/30e049df-fd7f-4e06-9dce-a026658e30ab/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200729%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200729T172232Z&X-Amz-Expires=86400&X-Amz-Signature=d95da87732987c02d0f4d6f2eabbee94036cfc086dbbb7ff2b19ec5efeb878ba&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
+![](https://yongnas.iptime.org/sql/til24_18.png)
 
 *`WHERE`구에서 금액을 계산하고 2000원 이상인 행 검색하기*
 
@@ -289,16 +282,16 @@ SELECT 식1, 식2 ... FROM 테이블명
 SELECT 열명, 식1 FROM 테이블명 ORDER BY 식1 [ASC|DESC]
 ```
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/cb81fbb5-6a78-4a82-a2f4-9327ce06ccef/Untitled.png](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/cb81fbb5-6a78-4a82-a2f4-9327ce06ccef/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200729%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200729T172345Z&X-Amz-Expires=86400&X-Amz-Signature=a9706ca5477ba2f2d3bf30523cb6bf5456e2ef9ddaa9bb0e3882cd77d4252712&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
+![](https://yongnas.iptime.org/sql/til24_19.png)
 
 - `ORDER BY`는 서버에서 내부적으로 가장 나중에 처리된다.
 - 즉, `SELECT` 구 보다 나중에 처리되기 때문에 `**SELECT`구에서 지정한 별명을 `ORDER BY`에서도 사용할 수 있다.**
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a00e7319-8bd1-4dab-b2e4-01c13f5cafaa/Untitled.png](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/a00e7319-8bd1-4dab-b2e4-01c13f5cafaa/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200729%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200729T172411Z&X-Amz-Expires=86400&X-Amz-Signature=e4a64b0282bf7cd43373c5754887b80a3de57de8c851ffd8810b092572d621b3&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
+![](https://yongnas.iptime.org/sql/til24_20.png)
 
 > ⚠️ WHERE, SELECT, ORDER BY의 처리 순서
 >
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/36f3de8a-85b0-4e54-9127-bd9b63eb72cb/Untitled.png](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/36f3de8a-85b0-4e54-9127-bd9b63eb72cb/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200729%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200729T172435Z&X-Amz-Expires=86400&X-Amz-Signature=9f029b4059947c834d9a25f58b954be478fbcee358f3df87b7e56cc7394e75d2&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
+![](https://yongnas.iptime.org/sql/til24_21.png)
 
 ## 7. 함수
 
@@ -321,7 +314,7 @@ SELECT 열명, 식1 FROM 테이블명 ORDER BY 식1 [ASC|DESC]
 SELECT 열명, ROUND(열명) FROM 테이블명;
 ```
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b1af78f5-be06-4fb3-bec2-c7ac02814131/Untitled.png](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b1af78f5-be06-4fb3-bec2-c7ac02814131/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200729%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200729T172507Z&X-Amz-Expires=86400&X-Amz-Signature=5b0e04e8c20c493d0550713f71b740d86a0d6c739e79611d6a904227764f3252&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
+![](https://yongnas.iptime.org/sql/til24_22.png)
 
 > ⚠️ DECIMAL 형
 >
@@ -335,7 +328,7 @@ SELECT 열명, ROUND(열명) FROM 테이블명;
 - 음수로 지정해 정수부의 반올림할 자릿수도 지정할 수 있다.
 - `-1`을 지정하면 1단위, `-2`을 지정하면 10단위를 반올림할 수 있다.
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/389b4664-5f6b-4717-bb91-d0ca14eac800/Untitled.png](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/389b4664-5f6b-4717-bb91-d0ca14eac800/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200729%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200729T172538Z&X-Amz-Expires=86400&X-Amz-Signature=a92f92bca4af5a74b4e7ad58dd1c8a983d7d3ac28164ac89ca4f1fcef495dce6&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
+![](https://yongnas.iptime.org/sql/til24_23.png)
 
 > ⚠️ 버림 : `TRUNCATE`
 
@@ -345,11 +338,11 @@ SELECT 열명, ROUND(열명) FROM 테이블명;
 
 - 문자열 결합은 데이터베이스 제품마다 방언이 있다.
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0f25636b-8367-4ad7-a000-54eb46072d55/Untitled.png](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/0f25636b-8367-4ad7-a000-54eb46072d55/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200729%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200729T172617Z&X-Amz-Expires=86400&X-Amz-Signature=8e31d1158c8763ed8beac6cf2929fe97410d7f3d4004e3258cb2ba13f1f32fd2&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
+![](https://yongnas.iptime.org/sql/til24_24.png)
 
 - 2개의 열 데이터를 모아서 1개의 열로 처리하고 싶은 경우에 자주 사용
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fad16b21-271e-4f24-90a3-aa5e5aee5dab/Untitled.png](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/fad16b21-271e-4f24-90a3-aa5e5aee5dab/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200729%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200729T172638Z&X-Amz-Expires=86400&X-Amz-Signature=5b93e1bb38ee4ee0436dd95611ba685c32c7bb98e741a9118aa6f9064a92d58a&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
+![](https://yongnas.iptime.org/sql/til24_25.png)
 
 *문자열 결합으로 단위를 연결해 결과 얻기*
 
@@ -401,7 +394,7 @@ TRIM('ABC   ') -> 'ABC'
 - **한 문자가 몇 Byte인지는 쓰이는 문자세트에 따라 다르다.**
 - 특히, `OCTET_LENGTH`함수를 사용하는 경우는 문자 수가 아닌 Byte단위로 길이를 계산하므로 주의가 필요
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/70eff676-ca1a-4552-9565-672225d2f503/Untitled.png](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/70eff676-ca1a-4552-9565-672225d2f503/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200729%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200729T172732Z&X-Amz-Expires=86400&X-Amz-Signature=ef2a7e793307f9d679603c593a23584089cee9a0fb5aec3fc5b23e5d90ab3467&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
+![](https://yongnas.iptime.org/sql/til26_.png)
 
 - `EUC-KR`에서 `ASCII`문자는 1Byte, 한글은 2Byte의 용량을 가진다.
 - `UTF-8`에서 `ASCII`문자는 1Byte, 한글은 3Byte의 용량을 가진다.
@@ -425,7 +418,7 @@ TRIM('ABC   ') -> 'ABC'
 
 - 인수는 지정할 필요 없으며 따라서 `()`를 사용하지 않는 특수한 함수다.
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/98fa2802-513f-48b5-a4bc-d31328b18398/Untitled.png](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/98fa2802-513f-48b5-a4bc-d31328b18398/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200729%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200729T172825Z&X-Amz-Expires=86400&X-Amz-Signature=d07ca16dbc81e66fc08b116ece14050111681061ce0b3543234651f4a9b1e328&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
+![](https://yongnas.iptime.org/sql/til24_27.png)
 
 `CURRENT_TIMESTAMP`로 시스템 날짜 확인
 
@@ -447,7 +440,7 @@ TRIM('ABC   ') -> 'ABC'
 - 날짜시간형 데이터는 기간형 수치데이터와 덧셈 및 뺄셈을 할 수 있다.
 - 예를들어 특정일로 부터 1일 후를 계산할 수도 있고 1일 전을 계산할 수도 있다.
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2fc51a19-4981-487c-af8a-6bfb0dc84cac/Untitled.png](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/2fc51a19-4981-487c-af8a-6bfb0dc84cac/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200729%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200729T173031Z&X-Amz-Expires=86400&X-Amz-Signature=396d382d3b7bd2743ffb26c0ae738189c20c65c64a51e9d6dbb13e8445866c68&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
+![](https://yongnas.iptime.org/sql/til24_28.png)
 
 *시스템 날짜에서 1일 후와 1일전 계산*
 
@@ -506,7 +499,7 @@ SELECT a, COALESCE(a,0) FROM sample37;
 CASE WHEN 조건식 THEN 식 ...
 ```
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5d04bc81-e2ca-48d3-8c23-dec006ad6717/Untitled.png](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/5d04bc81-e2ca-48d3-8c23-dec006ad6717/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200729%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200729T172943Z&X-Amz-Expires=86400&X-Amz-Signature=c4b12c81f1d98e5bb53862a16c0afb0de1b817b6afa57104f77757a1c0965c8c&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
+![](https://yongnas.iptime.org/sql/til24_29.png)
 
 *검색 CASE를 이용한 성별 코드 변환하기*
 
@@ -524,7 +517,7 @@ END
 - 식 1의 값이 `WHEN`의 식2의 값과 동일한지 비교하고 값이 같다면 식3의 값이 `CASE`문의 결과값이 된다.
 - 값이 같지 않으면 그 뒤에 기술한 `WHEN`절과 비교하고 그래도 일치하는 `WHEN`절이 없다면 `ELSE`절이 적용
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a467d4db-8182-45b9-8a81-b5329c52c07a/Untitled.png](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/a467d4db-8182-45b9-8a81-b5329c52c07a/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200729%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200729T173146Z&X-Amz-Expires=86400&X-Amz-Signature=4ef5b46fccae1c2960a1dd931a001ab7371312e49221bfcc5b1b70ec26584144&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
+![](https://yongnas.iptime.org/sql/til24_30.png)
 
 *단순 CASE를 이용한 성별 코드 변환하기*
 
@@ -545,7 +538,7 @@ END
 
 - `WHEN NULL THEN '데이터 없음'`과 같이 지정해도 문법적으로 문제는 없으나 정상적으로 처리되지 않는다.
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7918ab4b-581b-4285-9561-b5c8cb8bc20e/Untitled.png](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/7918ab4b-581b-4285-9561-b5c8cb8bc20e/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200729%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200729T173217Z&X-Amz-Expires=86400&X-Amz-Signature=a15827c86f080fc2352825ac4137597eb3e708e4398f68ce5d15a8670d04f3c2&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
+![](https://yongnas.iptime.org/sql/til24_31.png)
 
 *단순 CASE문에서 `WHEN`절에 `NULL`지정하기*
 
@@ -559,7 +552,7 @@ END
 
 `**NULL`값인지 아닌지를 판정하기 위해서는 `IS NULL`을 사용해야 하며 단순 CASE문 특성상 `=`연산자로 비교하는 만큼 검색 CASE문을 사용해야 한다.**
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/345c3849-8287-4639-8365-3144e10d5f2d/Untitled.png](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/345c3849-8287-4639-8365-3144e10d5f2d/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200729%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200729T173242Z&X-Amz-Expires=86400&X-Amz-Signature=beab0a2ba1aaca8c8573703bf5c9ebe70d40b81be55216f2aefc659c49245a6d&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
+![](https://yongnas.iptime.org/sql/til24_32.png)
 
 *검색 CASE문으로 `NULL`판정하기*
 
