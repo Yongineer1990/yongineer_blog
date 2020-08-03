@@ -61,7 +61,7 @@ draft: false
 
 ### SQL 명령의 종류
 
-![](http://yongnas.iptime.org/sql/1.png)
+![](https://yongnas.iptime.org/sql/1.png)
 
 **1) DML**
 
@@ -91,7 +91,7 @@ SQL로 데이터를 다루는 데이터베이스를 **관계형 데이터베이�
 
 ### 계층형 데이터베이스
 
-![](http://yongnas.iptime.org/sql/2.png)
+![](https://yongnas.iptime.org/sql/2.png)
 
 - 역사가 오래된 `DBMS`
 - 폴더와 파일 등의 계층 구조로 데이터를 저장하는 방식
@@ -100,7 +100,7 @@ SQL로 데이터를 다루는 데이터베이스를 **관계형 데이터베이�
 
 ### 관계형 데이터베이스
 
-![](http://yongnas.iptime.org/sql/3.png)
+![](https://yongnas.iptime.org/sql/3.png)
 
 - 관계 대수(Relational algebra)라는 것에 착안하여 고안한 데이터베이스
 - 행과 열을 가지는 표 형식 데이터를 저장하는 형태의 데이터베이스
@@ -117,7 +117,7 @@ SQL로 데이터를 다루는 데이터베이스를 **관계형 데이터베이�
 
 ### XML 데이터베이스
 
-![](http://yongnas.iptime.org/sql/4.png)
+![](https://yongnas.iptime.org/sql/4.png)
 
 - `XML`이란 자료 형식을 가리키는 용어
 - `HTML`과 흡사
@@ -234,7 +234,7 @@ Oracle에서는 `+`라는 특별한 연산자를 이용해 외부결합조건을
 
 ## 2. 웹 애플리케이션의 구조
 
-![](http://yongnas.iptime.org/sql/5.png)
+![](https://yongnas.iptime.org/sql/5.png)
 
 - 웹 애플리케이션은 일반적으로 웹 서버와 데이터베이스 서버의 조합으로 구축
 - 웹 서버에서 동적으로 `HTML`을 생성하려면 제어용 프로그램이 필요하다.
