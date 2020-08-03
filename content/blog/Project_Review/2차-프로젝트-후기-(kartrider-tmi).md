@@ -1,7 +1,7 @@
 ---
 title: 2차 프로젝트 후기 (Kartrider TMI)
 date: 2020-07-27 20:58:22
-category: Post-mortem
+category: Project Review
 thumbnail: './images/kart_tmi.png'
 draft: false
 ---
