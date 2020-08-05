@@ -129,7 +129,7 @@ $ (sudo) docker run --name chanel -d -p PORT:PORT yongineer/chanel_backend:0.1.0
 $ (sudo) docker ps
 ```
 
-![http://yongnas.iptime.org/docker/til31_2.png](http://yongnas.iptime.org/docker/til31_2.png)
+![https://yongnas.iptime.org/docker/til31_2.png](https://yongnas.iptime.org/docker/til31_2.png)
 
 만약 정상적으로 실행되지 않았다면 에러가 발생했을 것이다.
 
