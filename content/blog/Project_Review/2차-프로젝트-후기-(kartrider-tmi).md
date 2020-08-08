@@ -35,6 +35,7 @@ draft: false
 - Mysql
 - CORS headers
 - AWS : EC2, RDS, S3
+- Docker
 - Git Rebase
 
 ## 담당했던 부분
@@ -46,6 +47,8 @@ draft: false
 - 유저의 랭킹 상세를 보여주는 Detail View 작성 및 Unit Test 수행
 - 랭킹 상세 페이지에서 댓글을 작성하는 Comment View 작성 및 Unit Test 수행
 - 해당 유저의 랭킹 상세 페이지 조회수를 체크하는 User Pagehit View 작성 및 Unit Test 수행
+- AWS를 활용한 배포
+- Docker를 활용한 배포
 
 ## GOOD
 
