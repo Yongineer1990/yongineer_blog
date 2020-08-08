@@ -40,15 +40,19 @@ draft: false
 
 ## 담당했던 부분
 
-- Modeling
-- Pandas를 이용하여 Rank Page 부분 통계 도출
-- Social Login (KAKAO) View 작성 및 Unit Test 수행
-- 소셜 유저와 카트라이더 유저를 연결하는 Connect Gameuser View 작성 및 Unit Test 수행
-- 유저의 랭킹 상세를 보여주는 Detail View 작성 및 Unit Test 수행
-- 랭킹 상세 페이지에서 댓글을 작성하는 Comment View 작성 및 Unit Test 수행
-- 해당 유저의 랭킹 상세 페이지 조회수를 체크하는 User Pagehit View 작성 및 Unit Test 수행
-- AWS를 활용한 배포
+- Trello를 활용한 Task 관리
+- DB Modeling 및 ERD, Django Model작성
+- Pandas를 이용한 통계 데이터 도출
+- Social Login (KAKAO) 구현
+- 로그인시 JWT Token 발급 기능 구현
+- 로그인 상태 체크를 위한 JWT Token 검증 기능 구현
+- Social User와 Game User 연결 기능 구현
+- Ranking 상세 페이지 정보를 GET 방식으로 전송하는 기능 구현
+- Comment 기능 구현
+- Pageview 기능 구현
+- AWS EC2, RDS, S3 활용한 배포
 - Docker를 활용한 배포
+- Git Rebase를 이용한 Commit 관리
 
 ## GOOD
 
