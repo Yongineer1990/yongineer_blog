@@ -2,11 +2,11 @@
 title: TIL.36) [DRF] Tutorial Part1. Serialzation
 date: 2020-08-25 03:08:40
 category: Django
-thumbnail: '../TIL/images/django.png'
+thumbnail: 'https://yongnas.iptime.org/django/drf.png'
 draft: false
 ---
 
-![](../TIL/images/django.png)
+![](https://yongnas.iptime.org/django/drf.png)
 
 해당 내용은 Django REST Framework의 공식문서를 참고하여 작성되었으며. 해당 공식문서는 [여기](https://www.django-rest-framework.org/tutorial/1-serialization/)에서 확인 가능하다.
 
