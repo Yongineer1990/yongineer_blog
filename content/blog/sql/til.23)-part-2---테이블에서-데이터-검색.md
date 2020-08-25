@@ -1,5 +1,5 @@
 ---
-title: TIL.23) Part 2 - 테이블에서 데이터 검색
+title: TIL.23) 테이블에서 데이터 검색
 date: 2020-07-28 17:07:42
 category: SQL
 thumbnail: '../TIL/images/sql.png'

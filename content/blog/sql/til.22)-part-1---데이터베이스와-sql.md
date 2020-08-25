@@ -1,5 +1,5 @@
 ---
-title: TIL.22) Part 1 - 데이터베이스와 SQL
+title: TIL.22) 데이터베이스와 SQL
 date: 2020-07-27 23:07:32
 category: SQL
 thumbnail: '../TIL/images/sql.png'

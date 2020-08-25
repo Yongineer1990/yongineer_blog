@@ -1,5 +1,5 @@
 ---
-title: TIL.30) Part 4 - 데이터의 추가, 삭제, 갱신
+title: TIL.30) 데이터의 추가, 삭제, 갱신
 date: 2020-08-04 03:08:31
 category: SQL
 thumbnail: '../TIL/images/sql.png'

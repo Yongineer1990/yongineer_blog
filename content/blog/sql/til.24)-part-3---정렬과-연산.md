@@ -1,5 +1,5 @@
 ---
-title: TIL.24) Part 3 - 정렬과 연산
+title: TIL.24) 정렬과 연산
 date: 2020-07-30 01:45:32
 category: SQL
 thumbnail: '../TIL/images/sql.png'
