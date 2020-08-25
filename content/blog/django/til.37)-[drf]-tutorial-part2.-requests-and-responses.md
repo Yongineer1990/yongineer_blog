@@ -1,7 +1,7 @@
 ---
 title: TIL.37) [DRF] Tutorial Part2. Requests and Responses
 date: 2020-08-26 01:08:53
-category: django
+category: Django
 thumbnail: 'https://yongnas.iptime.org/django/drf.png'
 draft: false
 ---
