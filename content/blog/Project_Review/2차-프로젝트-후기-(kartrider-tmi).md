@@ -6,7 +6,6 @@ thumbnail: './images/kart_tmi.png'
 draft: false
 ---
 
-
 위코드 부트캠프에서 2차 프로젝트를 2주간 진행하였고 저는 **백엔드 부분을 담당**했습니다.
 
 # wekart 소개
@@ -17,7 +16,8 @@ draft: false
 - [Frontend github](https://github.com/wecode-bootcamp-korea/9-5dragon-frontend)
 
 ## Demo
-[![](https://images.velog.io/images/yongineer1990/post/87664e61-d90c-469b-8678-24f42405b1e6/image.png)*동영상 보기*](https://youtu.be/Av_p4sCT4Wg)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Av_p4sCT4Wg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## 적용 기술 (Backend)
 
@@ -322,4 +322,4 @@ Unit Test의 경우 일단 이 소셜로그인 과정의 Unit Test를 수행하�
 ### Bonus
 
 전설로 기억될 저희 백엔드 팀의 프레젠테이션을 소개하지 않는것은 도리가 아니라고 생각됩니다 여기까지 읽어주신 분들은 이 영상도 꼭 봐주셨으면 좋겠습니다.
-[![](https://images.velog.io/images/yongineer1990/post/2de3f743-342a-4ce9-8649-0edb25a54adc/image.png)*동영상 보기*](https://youtu.be/FyRGCjlBLo0)
+[![](https://images.velog.io/images/yongineer1990/post/2de3f743-342a-4ce9-8649-0edb25a54adc/image.png)_동영상 보기_](https://youtu.be/FyRGCjlBLo0)
