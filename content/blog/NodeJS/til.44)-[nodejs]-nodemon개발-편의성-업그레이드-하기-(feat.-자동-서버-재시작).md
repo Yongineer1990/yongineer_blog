@@ -59,3 +59,17 @@ npm install --save-dev nodemon
 이제 서버를 시작 하고 코드를 저장하게 되면 다음과 같이 서버 재시작 메시지가 보일것이다.
 
 ![https://yongnas.iptime.org/node/til44_01.png](https://yongnas.iptime.org/node/til44_01.png)
+
+> ⚠️만약 `Babel`을 사용한다면
+>
+>    ```json
+>    // package.json
+>
+>    ...
+>    "scripts": {
+>        "start": "nodemon --exec babel-node index.js --dalay 2"
+>      },
+>    ...
+>    ```
+>
+> `delay`옵션을 부여해서 `babel`이 코드를 변환 한 후 재시작 하는 방법을 추천한다.
