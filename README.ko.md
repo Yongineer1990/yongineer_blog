@@ -16,7 +16,7 @@
 
 ![screenshot](./assets/screenshot.png)
 
-In this template...
+In this template..
 
 - 💄 Fira Code 폰트로 코드 하이라이팅 기능
 - 😄 Emoji 지원
