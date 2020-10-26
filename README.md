@@ -18,7 +18,7 @@
 
 ![screenshot](./assets/screenshot.png)
 
-In this template...
+In this template....
 
 - 💄 Code highlight with Fira Code font
 - 🧙 CLI Tool
