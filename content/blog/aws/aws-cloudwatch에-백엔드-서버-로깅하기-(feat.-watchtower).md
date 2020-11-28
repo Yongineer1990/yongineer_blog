@@ -1,7 +1,7 @@
 ---
 title: AWS CloudWatch에 백엔드 서버 로깅하기 (feat. watchtower)
 date: 2020-11-25 01:11:98
-category: aws
+category: AWS
 thumbnail: '../TIL/images/aws.png'
 draft: false
 ---
