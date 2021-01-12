@@ -9,7 +9,7 @@ draft: false
 
 # Intro
 
-- `C++`로 작성된 문서지향적 크로스 플랫폼 데이터베이서
+- `C++`로 작성된 문서지향적 크로스 플랫폼 데이터베이스
 - 뛰어난 확장성과 성능
 
 ## No SQL?
@@ -32,17 +32,17 @@ draft: false
 }
 ```
 
-> `_id`
-
-- 12Bytes의 `hexadecimal`값
-- 각 문서의 유일한 값을 제공하며 자동 생성되나 `insert`시 지정함으로써 커스텀이 가능하다.
-
-    ```json
-    > db.users.insert({"_id" : "jim", "email" : "jim@email.com"})
-    { "_id" : "jim", "email" : "jim@email.com" }
-    ```
-
-- 자동 생성된`_id`는 `timestamp`, `machine id`, `process id`, 순차번호로 이루어져 있어 추가 될 때마다 값이 높아진다.
+> ### 💡`_id`
+>
+>- 12Bytes의 `hexadecimal`값
+>- 각 문서의 유일한 값을 제공하며 자동 생성되나 `insert`시 지정함으로써 커스텀이 가능하다.
+>
+>    ```json
+>    > db.users.insert({"_id" : "jim", "email" : "jim@email.com"})
+>    { "_id" : "jim", "email" : "jim@email.com" }
+>    ```
+>
+>- 자동 생성된`_id`는 `timestamp`, `machine id`, `process id`, 순차번호로 이루어져 있어 추가 될 때마다 값이 높아진다.
 
 ## Collection
 
