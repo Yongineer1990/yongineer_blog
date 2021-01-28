@@ -76,13 +76,13 @@ LOGGING = {
 
 ## Log group
 
-![https://yongnas.iptime.org/aws/04.png](https://yongnas.iptime.org/aws/04.png)
+![https://yongineer.duckdns.org/aws/04.png](https://yongineer.duckdns.org/aws/04.png)
 
 로그 그룹은 CloudWatch → 로그 그룹에서 생성가능하며 이때 생성한 이름을 `settings.py`의 `AWS_LOG_GROUP`에 추가해준다. 
 
 ## Log stream
 
-![https://yongnas.iptime.org/aws/05.png](https://yongnas.iptime.org/aws/05.png)
+![https://yongineer.duckdns.org/aws/05.png](https://yongineer.duckdns.org/aws/05.png)
 
 로그 스트림은 CloudWatch → 생성한 로그 그룹 → 로그 스트림 생성에서 만들 수 있으며 이때 지정한 이름을 `settings.py`의 `AWS_LOG_STREAM`에 추가해준다.
 
@@ -106,6 +106,6 @@ def add (a, b):
 
 ## CloudWatch Log 확인하기
 
-![https://yongnas.iptime.org/aws/06.png](https://yongnas.iptime.org/aws/06.png)
+![https://yongineer.duckdns.org/aws/06.png](https://yongineer.duckdns.org/aws/06.png)
 
 이제 CloudWatch에서 생성한 (또는 생성된) 로그스트림에서 앞서 작성한 테스트 코드의 에러 로그를 확인 할 수 있다.

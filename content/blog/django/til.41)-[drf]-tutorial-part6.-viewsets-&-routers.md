@@ -2,11 +2,11 @@
 title: TIL.41) [DRF] Tutorial Part6. ViewSets & Routers
 date: 2020-08-31 00:08:38
 category: Django
-thumbnail: 'https://yongnas.iptime.org/django/drf.png'
+thumbnail: 'https://yongineer.duckdns.org/django/drf.png'
 draft: false
 ---
 
-![](https://yongnas.iptime.org/django/drf.png)
+![](https://yongineer.duckdns.org/django/drf.png)
 
 해당 내용은 Django REST Framework의 공식문서를 참고하여 작성되었으며. 해당 공식문서는 [여기](https://www.django-rest-framework.org/tutorial/6-viewsets-and-routers/)에서 확인 가능하다.
 

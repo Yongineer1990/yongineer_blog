@@ -58,7 +58,7 @@ CREATE TABLE 테이블명 (
 
 `NULL`을 허용할 것인지 지정한다. 기본값은 허용이나 `NOT NULL`을 지정하면 `NULL`을 허용하지 않는다.
 
-![https://yongnas.iptime.org/sql/til47_01.png](https://yongnas.iptime.org/sql/til47_01.png)
+![https://yongineer.duckdns.org/sql/til47_01.png](https://yongineer.duckdns.org/sql/til47_01.png)
 
 > ⚠️ 열 정의
 >
@@ -103,7 +103,7 @@ ALTER TABLE 테이블명 ADD 열 정의
 
 열을 추가 할 때는 `ADD` 하부 명령을 통해 실행 한다. 여기에서의 열 정의는 `CREATE TABLE`의 경우와 동일하다. 즉, 열 이름, 자료형, 기본값, `NULL`제약을 지정한다. 물론 열의 이름이 중복 되면 열을 추가 할 수 없다.
 
-![https://yongnas.iptime.org/sql/til47_02.png](https://yongnas.iptime.org/sql/til47_02.png)
+![https://yongineer.duckdns.org/sql/til47_02.png](https://yongineer.duckdns.org/sql/til47_02.png)
 
 `ALTER TABLE ADD`로 열을 추가 할 때, 기존 데이터행이 존재하면 추가한 열의 값이 모두 `NULL`이 된다. 물론 기본 값이 지정되어 있으면 기본값으로 데이터가 저장된다. **한편, `NOT NULL` 제약을 붙인 열을 추가하고 싶다면 먼저 `NOT NULL`로 제약을 건 뒤에 `NULL` 이외의 값으로 기본값을 지정할 필요가 있다.**
 
@@ -115,7 +115,7 @@ ALTER TABLE 테이블명 MODIFY 열 정의
 
 열 속성을 변경할 경우 `MODIFY` 하부 명령을 통해 실행한다. 이때도 열 정의는 `CREATE TABLE`의 경우와 동일하다. `MODIFY`로 열 이름은 변경할 수 없지만, 자료형이나 기본값, `NULL`제약 등의 속성은 변경할 수 있다.
 
-![https://yongnas.iptime.org/sql/til47_03.png](https://yongnas.iptime.org/sql/til47_03.png)
+![https://yongineer.duckdns.org/sql/til47_03.png](https://yongineer.duckdns.org/sql/til47_03.png)
 
 기존의 데이터 행이 존재하는 경우, 속성 변경에 따라 데이터 역시 변환된다. 이때 만약 자료형이 변경되면 테이블에 들어간 데이터의 자료형 역시 바뀐다. 다만 그 처리과정에서 에러가 발생하면 `ALTER TABLE`명령은 실행되지 않는다.
 
@@ -129,7 +129,7 @@ ALTER TABLE 테이블명 CHANGE [기존 열 이름][신규 열 정의]
 
 열 이름을 변경할 때는 `CHANGE` 하부 명령으로 변경한다. `CHANGE`는 열 이름 뿐만 아니라 열 속성도 변경할 수 있다. 한편, `Oracle`에서는 `RENAME TO` 하부 명령을 사용한다.
 
-![https://yongnas.iptime.org/sql/til47_04.png](https://yongnas.iptime.org/sql/til47_04.png)
+![https://yongineer.duckdns.org/sql/til47_04.png](https://yongineer.duckdns.org/sql/til47_04.png)
 
 ### 열 삭제
 
@@ -139,7 +139,7 @@ ALTER TABLE 테이블명 DROP 열명
 
 열을 삭제할때는 `DROP` 하부명령을 사용한다. `DROP`뒤에 삭제하고 싶은 열 명을 지정한다. 물론, 존재하지 않는 열이 지정되면 에러가 발생한다.
 
-![https://yongnas.iptime.org/sql/til47_05.png](https://yongnas.iptime.org/sql/til47_05.png)
+![https://yongineer.duckdns.org/sql/til47_05.png](https://yongineer.duckdns.org/sql/til47_05.png)
 
 ## 4. ALTER TABLE로 테이블 관리
 
@@ -272,11 +272,11 @@ INSERT INTO sample634 (3, '셋째줄');
 
 `INSERT`를 이용해 앞서 생성항 `sample634` 테이블에 세 개의 행을 추가 한 후 이미 존재하는 값인 2로 다시 한 번 행을 추가한다면 기본키 제약에 위반되어 행을 추가 할 수 없다. 기본키 `p`열의 값이 중복되기 때문이다.
 
-![https://yongnas.iptime.org/sql/til47_06.png](https://yongnas.iptime.org/sql/til47_06.png)
+![https://yongineer.duckdns.org/sql/til47_06.png](https://yongineer.duckdns.org/sql/til47_06.png)
 
 또한, `UPDATE`명령 역시 기본키가 중복된다면 에러가 발생한다.
 
-![https://yongnas.iptime.org/sql/til47_07.png](https://yongnas.iptime.org/sql/til47_07.png)
+![https://yongineer.duckdns.org/sql/til47_07.png](https://yongineer.duckdns.org/sql/til47_07.png)
 
 이처럼 **열을 기본키로 지정해 유일한 값을 가지도록 하는 구조가 바로 기본키 제약**이다. 행이 유일성을 필요로 한다는 다른 의미에서 '유일성 제약'이라 불리는 경우도 있다.
 
@@ -286,11 +286,11 @@ INSERT INTO sample634 (3, '셋째줄');
 
 기본키를 구성하는 열은 복수라도 상관 없다. 다만, 키를 구성하는 모든 열을 사용해서 중복하는 값이 있는지 없는지를 검사한다.
 
-![https://yongnas.iptime.org/sql/til47_08.png](https://yongnas.iptime.org/sql/til47_08.png)
+![https://yongineer.duckdns.org/sql/til47_08.png](https://yongineer.duckdns.org/sql/til47_08.png)
 
 위와 같은 테이블 구성에서 키가 완전히 동일한 데이터 값으로 `INSERT`명령을 실행하면 기본키 제약에 위반되어 에러가 나지만 `a`, `b`열의 데이터 중 하나라도 다르다면 키 전체로는 중복되지 않으므로 에러가 발생하지 않는다.
 
-![https://yongnas.iptime.org/sql/til47_09.png](https://yongnas.iptime.org/sql/til47_09.png)
+![https://yongineer.duckdns.org/sql/til47_09.png](https://yongineer.duckdns.org/sql/til47_09.png)
 
 # 인덱스 구조
 
@@ -318,19 +318,19 @@ INSERT INTO sample634 (3, '셋째줄');
 
 이진 탐색은 차례로 나열된 집합에 대해 유효한 검색 방법이며 집합을 반으로 나누어 조사한다.
 
-![https://yongnas.iptime.org/sql/til47_10.png](https://yongnas.iptime.org/sql/til47_10.png)
+![https://yongineer.duckdns.org/sql/til47_10.png](https://yongineer.duckdns.org/sql/til47_10.png)
 
 만약 위와 같은 집합에서 34의 위치를 찾는다고 가정한다면 먼저 이진 탐색에서는 집합의 가운데 부터 조사한다. 위 예시에서 가운데 값은 27인데 그렇다면 현재 찾고있는 34보다 작으며 수치는 정렬되어 있으므로 27위치 오른쪽에서 다시 중심위치를 찾는다.
 
-![https://yongnas.iptime.org/sql/til47_11.png](https://yongnas.iptime.org/sql/til47_11.png)
+![https://yongineer.duckdns.org/sql/til47_11.png](https://yongineer.duckdns.org/sql/til47_11.png)
 
 27의 오른쪽 가운데 값은 38이다. 34<38이기 때문에 이번에는 중심위치의 왼쪽에 원하는 숫자가 있을것이다.
 
-![https://yongnas.iptime.org/sql/til47_12.png](https://yongnas.iptime.org/sql/til47_12.png)
+![https://yongineer.duckdns.org/sql/til47_12.png](https://yongineer.duckdns.org/sql/til47_12.png)
 
 이번에는 30이 중심위치다 따라서 34>30 이기 때문에 오른쪽에서 원하는 숫자를 찾게 된다.
 
-![https://yongnas.iptime.org/sql/til47_13.png](https://yongnas.iptime.org/sql/til47_13.png)
+![https://yongineer.duckdns.org/sql/til47_13.png](https://yongineer.duckdns.org/sql/til47_13.png)
 
 이번에는 중심위치가 34이며 이 숫자가 지금 우리가 찾는 숫자와 일치하게 된다. 이렇게 이진 탐색을 사용하면 총 네번의 비교를 통해 목표를 찾을 수 있다.
 
@@ -342,7 +342,7 @@ INSERT INTO sample634 (3, '셋째줄');
 
 일반적으로 테이블에 인덱스를 작성하면 테이블 데이터와 별개로 인덱스용 데이터가 저장장치에 만들어진다. 이때 이진 트리라는 데이터 구조로 작성된다. 이진 트리의 구조는 다음과 같다.
 
-![https://yongnas.iptime.org/sql/til47_18.png](https://yongnas.iptime.org/sql/til47_18.png)
+![https://yongineer.duckdns.org/sql/til47_18.png](https://yongineer.duckdns.org/sql/til47_18.png)
 
 트리는 노드라는 요소로 구성된다. 각 노드는 두개의 가지로 나뉜다. 노드의 왼쪽 가지는 작은 값으로, 오른쪽 가지는 큰 값으로 나뉘어져 있다. 두 개의 가지로 분기하는 구조라서 '이진 트리'라 불리는 것이다.
 
@@ -350,19 +350,19 @@ INSERT INTO sample634 (3, '셋째줄');
 
 위 트리에서 12라는 값을 검색하는 예는 다음과 같다.
 
-![https://yongnas.iptime.org/sql/til47_14.png](https://yongnas.iptime.org/sql/til47_14.png)
+![https://yongineer.duckdns.org/sql/til47_14.png](https://yongineer.duckdns.org/sql/til47_14.png)
 
 먼저 루트 노드에서 찾을 값과 루트 노드의 값을 비교한다. 20 > 12 이기 때문에 루트노드에서 왼쪽의 가지로 이동한다.
 
-![https://yongnas.iptime.org/sql/til47_15.png](https://yongnas.iptime.org/sql/til47_15.png)
+![https://yongineer.duckdns.org/sql/til47_15.png](https://yongineer.duckdns.org/sql/til47_15.png)
 
 다음은 15이다. 15 > 12 이기때문에 이번에도 왼쪽 가지로 이동한다.
 
-![https://yongnas.iptime.org/sql/til47_16.png](https://yongnas.iptime.org/sql/til47_16.png)
+![https://yongineer.duckdns.org/sql/til47_16.png](https://yongineer.duckdns.org/sql/til47_16.png)
 
 다음은 10이다. 12 > 10 이기때문에 이번에는 오른쪽 가지로 이동한다.
 
-![https://yongnas.iptime.org/sql/til47_17.png](https://yongnas.iptime.org/sql/til47_17.png)
+![https://yongineer.duckdns.org/sql/til47_17.png](https://yongineer.duckdns.org/sql/til47_17.png)
 
 이렇게 원하는 값인 12를 찾을 수 있었다.
 
@@ -444,11 +444,11 @@ EXPLAIN SQL명령
 
 `EXPLAIN`은 표준 SQL에는 존재하지 않는, 데이터베이스 제품 의존형 명령이다. 하지만 어떤 데이터베이스 제품이라도 이와 비슷한 명령을 지원한다.
 
-![https://yongnas.iptime.org/sql/til47_19.png](https://yongnas.iptime.org/sql/til47_19.png)
+![https://yongineer.duckdns.org/sql/til47_19.png](https://yongineer.duckdns.org/sql/til47_19.png)
 
 `sample62`의 `a`열에는 `isample65`라는 인덱스가 작성되어 있다. `possible_keys`라는 곳에 사용될 수 있는 인덱스가 표시되며, `key`는 사용된 인덱스가 표시된다.
 
-![https://yongnas.iptime.org/sql/til47_20.png](https://yongnas.iptime.org/sql/til47_20.png)
+![https://yongineer.duckdns.org/sql/til47_20.png](https://yongineer.duckdns.org/sql/til47_20.png)
 
 `WHERE`의 조건을 바꿔 인덱스가 작성된 `a`열을 조건식에 사용하지 않는다면 인덱스를 사용할 수 없다 (`possible_keys`와 `key`가 `NULL`로 표기된다.)
 
@@ -460,7 +460,7 @@ EXPLAIN SQL명령
 
 예를들어, '예' 또는 '아니오'라는 값만 가지는 열이 있다면, 해당 열에 인덱스를 지정해도 다음과 같은 이진트리가 되어 좋은 구조를 가지지 못한다.
 
-![https://yongnas.iptime.org/sql/til47_21.png](https://yongnas.iptime.org/sql/til47_21.png)
+![https://yongineer.duckdns.org/sql/til47_21.png](https://yongineer.duckdns.org/sql/til47_21.png)
 
 이는 단순한 리스트와 별다른 차이가 없는 구조로 이진 탐색에 의한 효율화를 기대하기 어렵다. 위 예시는 극단적인 예시지만 **데이터의 종류가 적으면 적을수록 인덱스의 효율도 떨어진다.** 반대로 서로 다른 값으로 여러 종류의 데이터가 존재하면 그만큼 효율은 좋아진다. 이렇게 인덱스의 품질을 고려해 실행계획이 세워지는 것이다.
 
@@ -505,7 +505,7 @@ CREATE VIEW 뷰명 AS SELECT 명령
 
 CREATE VIEW 다음에 뷰의 이름을 지정하고 AS로 SELECT명령을 지정한다. 이때 AS별명을 붙일 때 사용하는 AS와는 달리 생략 불가능 하다.
 
-![https://yongnas.iptime.org/sql/til47_22.png](https://yongnas.iptime.org/sql/til47_22.png)
+![https://yongineer.duckdns.org/sql/til47_22.png](https://yongineer.duckdns.org/sql/til47_22.png)
 
 뷰를 작성 한 뒤 `SELECT`명령의 `FROM`구에 지정해 사용할 수 있다. 뷰는 필요에 따라 열을 지정할 수도 있다. 이 경우에는 이름 뒤에 `()`로 묶어 열을 나열한다.
 
@@ -517,7 +517,7 @@ CREATE VIEW 뷰명 (열명1, 열명2, ...) AS SELECT 명령
 
 SELECT명령의 모든 열을 사용할 경우에는 열을지정하지 않는 편이 낫다. 또한 열 이외에는 정의할 수 없으며, 테이블의 열을 정의할 때처럼 자료형이나 제약도 지정할 수 없다.
 
-![https://yongnas.iptime.org/sql/til47_23.png](https://yongnas.iptime.org/sql/til47_23.png)
+![https://yongineer.duckdns.org/sql/til47_23.png](https://yongineer.duckdns.org/sql/til47_23.png)
 
 ### 뷰 삭제
 

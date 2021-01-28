@@ -2,11 +2,11 @@
 title: TIL.43) [NodeJS] Babel 사용해보기
 date: 2020-09-04 04:09:96
 category: NodeJS
-thumbnail: 'https://yongnas.iptime.org/node/babel.png'
+thumbnail: 'https://yongineer.duckdns.org/node/babel.png'
 draft: false
 ---
 
-![](https://yongnas.iptime.org/node/babel.png)
+![](https://yongineer.duckdns.org/node/babel.png)
 
 # 이것은 무엇일까?
 
@@ -24,7 +24,7 @@ Babel은 JS transpiler이다. 트랜스파일이란 다른 실행 환경에서�
 
 ## Try it out
 
-![https://yongnas.iptime.org/js/til43_01.png](https://yongnas.iptime.org/node/til43_01.png)
+![https://yongineer.duckdns.org/js/til43_01.png](https://yongineer.duckdns.org/node/til43_01.png)
 
 `Babel`의 홈페이지에서 제공하는 Try it out에서 `ES6`의 문법을 `ES5`이하의 문법으로 트랜스파일해보자. 이처럼 `Babel`은 최신의 문법을 자동으로 기존의 문법으로 변환해주는 기능을 한다.
 

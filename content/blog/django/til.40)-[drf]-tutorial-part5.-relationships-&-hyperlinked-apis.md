@@ -2,11 +2,11 @@
 title: TIL.40) [DRF] Tutorial Part5. Relationships & Hyperlinked APIs
 date: 2020-08-27 22:08:71
 category: Django
-thumbnail: 'https://yongnas.iptime.org/django/drf.png'
+thumbnail: 'https://yongineer.duckdns.org/django/drf.png'
 draft: false
 ---
 
-![](https://yongnas.iptime.org/django/drf.png)
+![](https://yongineer.duckdns.org/django/drf.png)
 
 해당 내용은 Django REST Framework의 공식문서를 참고하여 작성되었으며. 해당 공식문서는 [여기](https://www.django-rest-framework.org/tutorial/5-relationships-and-hyperlinked-apis/)에서 확인 가능하다.
 
@@ -303,9 +303,9 @@ Django REST Framework의 설정은 모두 `REST_FRAMEWORK`네임 스페이스에
 
 이제 브라우저를 열고 Code Snippets의 Detail로 이동하면 해당 Code Snippet의 Highlight링크가 생성되었으며 이를 클릭하면 Code Highlight된 `HTML`페이지로 이동된다.
 
-![https://yongnas.iptime.org/django/til40_1.png](https://yongnas.iptime.org/django/til40_1.png)
+![https://yongineer.duckdns.org/django/til40_1.png](https://yongineer.duckdns.org/django/til40_1.png)
 
 
 **결과**
 ___
-<p align="center"><img src="https://yongnas.iptime.org/django/til40_2.png"></p>
+<p align="center"><img src="https://yongineer.duckdns.org/django/til40_2.png"></p>

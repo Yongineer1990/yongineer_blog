@@ -26,8 +26,8 @@ SELECT 열명 FROM 테이블명 WHERE 조건식 ORDER BY 열명;
     ```sql
     SELECT 열명 FROM 테이블명 ORDER BY 열명;
     ```
-    ![](https://yongnas.iptime.org/sql/til24_1.png)
-    ![](https://yongnas.iptime.org/sql/til24_2.png)
+    ![](https://yongineer.duckdns.org/sql/til24_1.png)
+    ![](https://yongineer.duckdns.org/sql/til24_2.png)
 ## 2. ORDER BY DESC로 내림차순으로 정렬하기
 
 ```sql
@@ -43,11 +43,11 @@ SELECT 열명 FROM 테이블명 ORDER BY 열명 ASC;
 - `ASC` : **ASC**endant
 - 정렬방법을 지정하지 않은 경우에는 `ASC`로 간주하며 `ORDER BY`의 기본 정렬방법은 오름차순
 
-![](https://yongnas.iptime.org/sql/til24_3.png)
+![](https://yongineer.duckdns.org/sql/til24_3.png)
 
 *`age`열의 값을 `DESC`로 내림차순 정렬*
 
-![](https://yongnas.iptime.org/sql/til24_4.png)
+![](https://yongineer.duckdns.org/sql/til24_4.png)
 
 *`age`열의 값을 `ASC`로 오름차순 정렬*
 
@@ -69,7 +69,7 @@ SELECT 열명 FROM 테이블명 ORDER BY 열명 ASC;
 
 ### 사전식 순서에서 주의할 점
 
-![](https://yongnas.iptime.org/sql/til24_5.png)
+![](https://yongineer.duckdns.org/sql/til24_5.png)
 
 *`a`열을 오름차순으로 정렬*
 
@@ -96,10 +96,10 @@ SELECT 열명 FROM 테이블명 WHERE 조건식 ORDER BY 열명1 [ASC|DESC], 열
 
 같은 값을 가진 행의 순서나 `ORDER BY`를 생략 했을때의 순서는 일정하지 않다. 따라서 언제나 같은 순서로 결과를 얻고 싶다면 반드시 `ORDER BY`구로 순서를 지정해야 한다.
 
-![](https://yongnas.iptime.org/sql/til24_6.png)
+![](https://yongineer.duckdns.org/sql/til24_6.png)
 위 테이블은 `a`와 `b`모두 `INTEGER`형이며 `b`열은 `a`열의 하위 번호이다 이를 `a`열만을 이용하여 '1-1, 1-2, 1-3, 2-1, 2-2'와 같이 정렬하려 한다.
 
-![](https://yongnas.iptime.org/sql/til24_7.png)
+![](https://yongineer.duckdns.org/sql/til24_7.png)
 
 *`a`열만으로 정렬하기*
 
@@ -115,13 +115,13 @@ SELECT 열명 FROM 테이블명 WHERE 조건식 ORDER BY 열명1 [ASC|DESC], 열
 - 정렬 순서는 지정한 열명의 순서를 따른다.
 - 값이 같아 순서를 결정할 수 없는 경우에는 다음으로 지정한 열명을 기준으로 정렬한다.
 
-![](https://yongnas.iptime.org/sql/til24_8.png)
+![](https://yongineer.duckdns.org/sql/til24_8.png)
 
 *`a`열과 `b`열로 정렬하기*
 
 > ⚠️ 위 예제에서 `a`와 `b`의 순서를 바꾸면
 >
-![](https://yongnas.iptime.org/sql/til24_9.png)
+![](https://yongineer.duckdns.org/sql/til24_9.png)
 >
 *`b`열과 `a`열로 정렬하기*
 >
@@ -132,7 +132,7 @@ SELECT 열명 FROM 테이블명 WHERE 조건식 ORDER BY 열명1 [ASC|DESC], 열
 ```sql
 SELECT 열명 FROM 테이블명 WHERE 조건식 ORDER BY 열명1 [ASC|DESC], 열명2 [ASC|DESC]...
 ```
-![](https://yongnas.iptime.org/sql/til24_10.png)
+![](https://yongineer.duckdns.org/sql/til24_10.png)
 
 *`a`열은 `ASC`로 `b`열은 `DESC`로 정렬*
 
@@ -160,7 +160,7 @@ SELECT 열명 FROM 테이블명 LIMIT 행수 [OFFSET 시작행];
 ```sql
 SELECT 열명 FROM 테이블명 WHERE 조건식 ORDER BY 열명 LIMIT 행수 [OFFSET 시작행];
 ```
-![](https://yongnas.iptime.org/sql/til24_11.png)
+![](https://yongineer.duckdns.org/sql/til24_11.png)
 
 - `LIMIT`으로 지정하는 것은 최대 행수이다.
 - 만약 테이블에 하나의 행만 있다면 `LIMIT 3`으로 지정해도 1개의 행이 반환된다.
@@ -169,7 +169,7 @@ SELECT 열명 FROM 테이블명 WHERE 조건식 ORDER BY 열명 LIMIT 행수 [OF
 
 `LIMIT 3`과 동일한 결과를 얻기 위해 `WHERE no <= 3`과 같은 조건식을 붙인다면 동일한 결과를 얻을 수 있으나 `**ORDER BY`로 정렬한 뒤 결과를 얻고자 한다면 내부 처리 순서가 달라 원하는 결과를 얻을 수 없다.**
 
-![](https://yongnas.iptime.org/sql/til24_12.png)
+![](https://yongineer.duckdns.org/sql/til24_12.png)
 
 *테이블을 정렬 후 `LIMIT 3`으로 상위 3건만 취득하기*
 
@@ -192,7 +192,7 @@ SELECT 열명 FROM 테이블명 WHERE 조건식 ORDER BY 열명 LIMIT 행수 [OF
 ```sql
 SELECT 열명 FROM 테이블명 WHERE 조건식 ORDER BY 열명 LIMIT 행수 OFFSET 위치;
 ```
-![](https://yongnas.iptime.org/sql/til24_13.png)
+![](https://yongineer.duckdns.org/sql/til24_13.png)
 
 *`LIMIT 3 OFFSET 3`으로 데이터 표시*
 
@@ -200,7 +200,7 @@ SELECT 열명 FROM 테이블명 WHERE 조건식 ORDER BY 열명 LIMIT 행수 OFF
 
 ## 1. 사칙 연산
 
-![](https://yongnas.iptime.org/sql/til24_14.png)
+![](https://yongineer.duckdns.org/sql/til24_14.png)
 
 - `%` 대신 `MOB`함수를 사용하는 경우도 있다.
 
@@ -215,13 +215,13 @@ SELECT 열명 FROM 테이블명 WHERE 조건식 ORDER BY 열명 LIMIT 행수 OFF
 SELECT 식1, 식2 ... FROM 테이블명
 ```
 
-![](https://yongnas.iptime.org/sql/til24_15.png)
+![](https://yongineer.duckdns.org/sql/til24_15.png)
 
 *가격 * 수량으로 금액 계산 하기*
 
 ## 3. 열의 별명
 
-![](https://yongnas.iptime.org/sql/til24_16.png)
+![](https://yongineer.duckdns.org/sql/til24_16.png)
 
 - 예약어 `AS`를 사용해 지정
 - 복수의 식이 존재 할 경우 각각의 식에 별명을 붙일 수 있다.
@@ -248,7 +248,7 @@ SELECT 식1, 식2 ... FROM 테이블명
 
 `SELECT`구에서 `amount`라는 별멍을 붙였으므로 `WHERE`구에서도 `amount`로 지정하면 되지 않을까 생각할 수도 있지만 실제로 `SELECT price * quantity "SELECT" FROM sample34 WHERE**amount>=2000**;` 실행해보면 다음과 같은 에러가 발생한다.
 
-![](https://yongnas.iptime.org/sql/til24_17.png)
+![](https://yongineer.duckdns.org/sql/til24_17.png)
 
 이는 **내부처리 순서에 의해 불가능**하다.
 
@@ -258,7 +258,7 @@ SELECT 식1, 식2 ... FROM 테이블명
 - 별명은 `SELECT`구문을 내부 처리 할때 붙여진다. 즉, `WHERE`구의 처리는 `SELECT`구보다 선행되므로 `WHERE`구에서 사용한 별칭은 아직 내부적으로 지정되지 않은 상태라 에러가 발생하게 된다.
 - 따라서, `**SELECT`구에서 지정한 별명은 `WHERE`구 안에서 사용할 수 없다.**
 
-![](https://yongnas.iptime.org/sql/til24_18.png)
+![](https://yongineer.duckdns.org/sql/til24_18.png)
 
 *`WHERE`구에서 금액을 계산하고 2000원 이상인 행 검색하기*
 
@@ -282,16 +282,16 @@ SELECT 식1, 식2 ... FROM 테이블명
 SELECT 열명, 식1 FROM 테이블명 ORDER BY 식1 [ASC|DESC]
 ```
 
-![](https://yongnas.iptime.org/sql/til24_19.png)
+![](https://yongineer.duckdns.org/sql/til24_19.png)
 
 - `ORDER BY`는 서버에서 내부적으로 가장 나중에 처리된다.
 - 즉, `SELECT` 구 보다 나중에 처리되기 때문에 `**SELECT`구에서 지정한 별명을 `ORDER BY`에서도 사용할 수 있다.**
 
-![](https://yongnas.iptime.org/sql/til24_20.png)
+![](https://yongineer.duckdns.org/sql/til24_20.png)
 
 > ⚠️ WHERE, SELECT, ORDER BY의 처리 순서
 >
-![](https://yongnas.iptime.org/sql/til24_21.png)
+![](https://yongineer.duckdns.org/sql/til24_21.png)
 
 ## 7. 함수
 
@@ -314,7 +314,7 @@ SELECT 열명, 식1 FROM 테이블명 ORDER BY 식1 [ASC|DESC]
 SELECT 열명, ROUND(열명) FROM 테이블명;
 ```
 
-![](https://yongnas.iptime.org/sql/til24_22.png)
+![](https://yongineer.duckdns.org/sql/til24_22.png)
 
 > ⚠️ DECIMAL 형
 >
@@ -328,7 +328,7 @@ SELECT 열명, ROUND(열명) FROM 테이블명;
 - 음수로 지정해 정수부의 반올림할 자릿수도 지정할 수 있다.
 - `-1`을 지정하면 1단위, `-2`을 지정하면 10단위를 반올림할 수 있다.
 
-![](https://yongnas.iptime.org/sql/til24_23.png)
+![](https://yongineer.duckdns.org/sql/til24_23.png)
 
 > ⚠️ 버림 : `TRUNCATE`
 
@@ -338,11 +338,11 @@ SELECT 열명, ROUND(열명) FROM 테이블명;
 
 - 문자열 결합은 데이터베이스 제품마다 방언이 있다.
 
-![](https://yongnas.iptime.org/sql/til24_24.png)
+![](https://yongineer.duckdns.org/sql/til24_24.png)
 
 - 2개의 열 데이터를 모아서 1개의 열로 처리하고 싶은 경우에 자주 사용
 
-![](https://yongnas.iptime.org/sql/til24_25.png)
+![](https://yongineer.duckdns.org/sql/til24_25.png)
 
 *문자열 결합으로 단위를 연결해 결과 얻기*
 
@@ -394,7 +394,7 @@ TRIM('ABC   ') -> 'ABC'
 - **한 문자가 몇 Byte인지는 쓰이는 문자세트에 따라 다르다.**
 - 특히, `OCTET_LENGTH`함수를 사용하는 경우는 문자 수가 아닌 Byte단위로 길이를 계산하므로 주의가 필요
 
-![](https://yongnas.iptime.org/sql/til26_.png)
+![](https://yongineer.duckdns.org/sql/til26_.png)
 
 - `EUC-KR`에서 `ASCII`문자는 1Byte, 한글은 2Byte의 용량을 가진다.
 - `UTF-8`에서 `ASCII`문자는 1Byte, 한글은 3Byte의 용량을 가진다.
@@ -418,7 +418,7 @@ TRIM('ABC   ') -> 'ABC'
 
 - 인수는 지정할 필요 없으며 따라서 `()`를 사용하지 않는 특수한 함수다.
 
-![](https://yongnas.iptime.org/sql/til24_27.png)
+![](https://yongineer.duckdns.org/sql/til24_27.png)
 
 `CURRENT_TIMESTAMP`로 시스템 날짜 확인
 
@@ -440,7 +440,7 @@ TRIM('ABC   ') -> 'ABC'
 - 날짜시간형 데이터는 기간형 수치데이터와 덧셈 및 뺄셈을 할 수 있다.
 - 예를들어 특정일로 부터 1일 후를 계산할 수도 있고 1일 전을 계산할 수도 있다.
 
-![](https://yongnas.iptime.org/sql/til24_28.png)
+![](https://yongineer.duckdns.org/sql/til24_28.png)
 
 *시스템 날짜에서 1일 후와 1일전 계산*
 
@@ -499,7 +499,7 @@ SELECT a, COALESCE(a,0) FROM sample37;
 CASE WHEN 조건식 THEN 식 ...
 ```
 
-![](https://yongnas.iptime.org/sql/til24_29.png)
+![](https://yongineer.duckdns.org/sql/til24_29.png)
 
 *검색 CASE를 이용한 성별 코드 변환하기*
 
@@ -517,7 +517,7 @@ END
 - 식 1의 값이 `WHEN`의 식2의 값과 동일한지 비교하고 값이 같다면 식3의 값이 `CASE`문의 결과값이 된다.
 - 값이 같지 않으면 그 뒤에 기술한 `WHEN`절과 비교하고 그래도 일치하는 `WHEN`절이 없다면 `ELSE`절이 적용
 
-![](https://yongnas.iptime.org/sql/til24_30.png)
+![](https://yongineer.duckdns.org/sql/til24_30.png)
 
 *단순 CASE를 이용한 성별 코드 변환하기*
 
@@ -538,7 +538,7 @@ END
 
 - `WHEN NULL THEN '데이터 없음'`과 같이 지정해도 문법적으로 문제는 없으나 정상적으로 처리되지 않는다.
 
-![](https://yongnas.iptime.org/sql/til24_31.png)
+![](https://yongineer.duckdns.org/sql/til24_31.png)
 
 *단순 CASE문에서 `WHEN`절에 `NULL`지정하기*
 
@@ -552,7 +552,7 @@ END
 
 `**NULL`값인지 아닌지를 판정하기 위해서는 `IS NULL`을 사용해야 하며 단순 CASE문 특성상 `=`연산자로 비교하는 만큼 검색 CASE문을 사용해야 한다.**
 
-![](https://yongnas.iptime.org/sql/til24_32.png)
+![](https://yongineer.duckdns.org/sql/til24_32.png)
 
 *검색 CASE문으로 `NULL`판정하기*
 

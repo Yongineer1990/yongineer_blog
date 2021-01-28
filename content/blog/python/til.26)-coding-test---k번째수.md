@@ -121,7 +121,7 @@ print(plus_ten(1))
 
 > ⚠️ 일반함수 vs 람다표현식
 >
-![](https://yongnas.iptime.org/python/til26_1.png)
+![](https://yongineer.duckdns.org/python/til26_1.png)
 
 ## 2. 람다 표현식 자체를 호출하기
 
@@ -248,7 +248,7 @@ print(result)
 
 위 예제는 요소가 2의 배수일 때는 문자열로 만들어 변환했고, 2의 배수가 아닐 때는 x값 그대로 반환했다.
 
-![](https://yongnas.iptime.org/python/til26_2.png)
+![](https://yongineer.duckdns.org/python/til26_2.png)
 
 # map( )
 
@@ -313,7 +313,7 @@ print(result)
 이때 람다표현식을 사용하여 `filter`안에 `lambda x: x > 5 and x < 10`를 넣어주면 `def`함수를 작성하지 않고 간단하게 해당 요소를 가져올 수 있다.
 
 
-![](https://yongnas.iptime.org/python/til26_3.png)
+![](https://yongineer.duckdns.org/python/til26_3.png)
 
 # reduce( )
 
@@ -340,7 +340,7 @@ print(result)
 `lambda x, y: x + y`와 같이 매개변수 `x`, `y`를 지정한 뒤 `x+y`의 결과를 반환하도록 만들었다.
 
 
-![](https://yongnas.iptime.org/python/til26_4.png)
+![](https://yongineer.duckdns.org/python/til26_4.png)
 
 # 그런데 map lambda는 최선일까?
 

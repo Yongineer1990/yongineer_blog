@@ -39,7 +39,7 @@ class Solution:
         return []
 ```
 
-![https://yongnas.iptime.org/python/til29_1.png](https://yongnas.iptime.org/python/til29_1.png)
+![https://yongineer.duckdns.org/python/til29_1.png](https://yongineer.duckdns.org/python/til29_1.png)
 
 배열의 첫번째 값과 (`nums[i]`), 그 이후 값들(`nums[j]`)을 대입하여 `target`에 맞으면 해당 값의 인덱스를 리턴했다.
 
@@ -65,7 +65,7 @@ class Solution:
                 return nums.index(n), nums[i+1:].index(complement) + (i+1)
 ```
 
-![https://yongnas.iptime.org/python/til29_2.png](https://yongnas.iptime.org/python/til29_2.png)
+![https://yongineer.duckdns.org/python/til29_2.png](https://yongineer.duckdns.org/python/til29_2.png)
 
 모든 조합을 비교하지않고 정답. 즉, 타겟에서 첫번째 값을 뺀 값 (`target - n`)이 존재하는지 탐색하는 방법으로 해결했다. 여기서 `in`의 시간복잡도는 $O(n)$이고 따라서 전체 시간 복잡도는 나의 해결법과 동일한 $O(n^2)$이다. 그러나 `in`연산은 파이썬 내부 함수로 `Brute Force`에 비해 훨씬 빠르다.
 
@@ -85,7 +85,7 @@ class Solution:
                 return nums.index(num), nums_map[target - num]
 ```
 
-![https://yongnas.iptime.org/python/til29_3.png](https://yongnas.iptime.org/python/til29_3.png)
+![https://yongineer.duckdns.org/python/til29_3.png](https://yongineer.duckdns.org/python/til29_3.png)
 
 위 풀이는 타겟에서 첫 번째 수를 빼면 두 번째 수를 바로 알아낼 수 있다. 그렇다면 두 번째 수를 키로 하고 기존의 인덱스는 값으로 바꿔서 딕셔너리로 저장해두면, 나중에 두 번째 수를 키로 조회해서 정답을 즉시 찾아낼 수 있다.
 

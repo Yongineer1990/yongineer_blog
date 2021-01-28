@@ -33,7 +33,7 @@ END
 
 절차 지향형 언어의 조건 분기와 SQL 조건 분기 사이에 가장 큰 차이점은 바로 리턴값이다. 절차 지향형 언어의 조건 분기는 문장을 실행하고 딱히 리턴하지는 않는다. 반면 SQL의 조건 분기는 특정한 값(상수)를 리턴한다.
 
-![https://yongnas.iptime.org/sql/055.png](https://yongnas.iptime.org/sql/055.png)
+![https://yongineer.duckdns.org/sql/055.png](https://yongineer.duckdns.org/sql/055.png)
 
 예를들어 위와 같은 결과를 도출할때 `district`필드는 다음과 같이 `CASE` 식으로 구할 수 있다.
 
@@ -56,11 +56,11 @@ UNION을 사용한 조건분기는 성능적인 측면에서 굉장히 큰 단�
 
 ## 1. UNION을 사용한 조건 분기와 관련된 간단한 예제
 
-![https://yongnas.iptime.org/sql/056.png](https://yongnas.iptime.org/sql/056.png)
+![https://yongineer.duckdns.org/sql/056.png](https://yongineer.duckdns.org/sql/056.png)
 
 일단 상품을 관리하는 items 테이블이 있다. 이 테이블은 각각의 상품에 대해서 세금이 포함된 가격과 세금이 포함되지 않은 가격을 모두 저장한다. 그런데 2002년부터 법이 개정되면서 세금이 포함된 가격을 표시하는게 의무가 되었다. 따라서 2001년까지는 세금이 포함되지 않은 가격(price\_tax\_ex)을, 2002년 부터는 세금이 포함된 가격(price\_tax\_in)을 price필드로 표시하게 되어 구하고자 하는 결과는 다음과 같다.
 
-![https://yongnas.iptime.org/sql/057.png](https://yongnas.iptime.org/sql/057.png)
+![https://yongineer.duckdns.org/sql/057.png](https://yongineer.duckdns.org/sql/057.png)
 
 이때 조건 분기에 year필드를 사용해야 하겠다는 건 쉽게 알 수 있을 것이다. UNION을 사용하면 다음과 같이 이런 조건 분기를 만들 수 있다.
 
@@ -78,7 +78,7 @@ WHERE year >= 2002;
 
 ### UNION을 사용했을 때의 실행 계획 문제
 
-![https://yongnas.iptime.org/sql/058.png](https://yongnas.iptime.org/sql/058.png)
+![https://yongineer.duckdns.org/sql/058.png](https://yongineer.duckdns.org/sql/058.png)
 
 `UNION` 쿼리는 items 테이블에 2회 접근한다는 것을 알 수 있다. 그리고 그때마다 Table full scan이 발생하므로 (`type : ALL`) 읽어들이는 비용도 테이블의 크기에 따라 선형으로 증가하게 된다.
 
@@ -102,7 +102,7 @@ SELECT item_name, year,
 
 ## 3. SELECT 구를 사용한 조건 분기의 실행 계획
 
-![https://yongnas.iptime.org/sql/059.png](https://yongnas.iptime.org/sql/059.png)
+![https://yongineer.duckdns.org/sql/059.png](https://yongineer.duckdns.org/sql/059.png)
 
 item테이블에 대한 접근이 1회로 줄어든 것을 확인할 수 있다. 뿐만 아니라 SQL 구문 자체의 가독성도 굉장히 좋았졌다.
 
@@ -116,11 +116,11 @@ item테이블에 대한 접근이 1회로 줄어든 것을 확인할 수 있다.
 
 먼저 다음과 같은 population테이블이 있다고 가정해 보자
 
-![https://yongnas.iptime.org/sql/060.png](https://yongnas.iptime.org/sql/060.png)
+![https://yongineer.duckdns.org/sql/060.png](https://yongineer.duckdns.org/sql/060.png)
 
 이 테이블을 아래와 같은 레이아웃으로 변경하는 방법을 생각해 보자 성별은 1은 남성 2는 여성을 의미한다고 가정한다.
 
-![https://yongnas.iptime.org/sql/061.png](https://yongnas.iptime.org/sql/061.png)
+![https://yongineer.duckdns.org/sql/061.png](https://yongineer.duckdns.org/sql/061.png)
 
 ## 1. 집계 대상으로 조건 분기
 
@@ -146,7 +146,7 @@ GROUP BY prefecture;
 
 ### UNION의 실행 계획
 
-![https://yongnas.iptime.org/sql/062.png](https://yongnas.iptime.org/sql/062.png)
+![https://yongineer.duckdns.org/sql/062.png](https://yongineer.duckdns.org/sql/062.png)
 
 실행 계획을 보면 popolation테이블에 테이블 풀 스캔이 2회 수행되는 것을 확인할 수 있다.
 
@@ -170,7 +170,7 @@ GROUP BY prefecture
 
 ### CASE식의 실행 계획
 
-![https://yongnas.iptime.org/sql/063.png](https://yongnas.iptime.org/sql/063.png)
+![https://yongineer.duckdns.org/sql/063.png](https://yongineer.duckdns.org/sql/063.png)
 
 population 테이블로의 풀 스캔이 1회로 감소한 것을 확인할 수 있다. 따라서 UNION을 사용한 경우의 2회에 비해 (캐시 등을 고려하지 않는다면) I/O비용이 절반으로 감소한다는 의미이다.
 
@@ -178,7 +178,7 @@ population 테이블로의 풀 스캔이 1회로 감소한 것을 확인할 수 
 
 예를들어 직원과 직원이 소속된 팀을 관리하는 employees테이블이 있다고 가정하자
 
-![https://yongnas.iptime.org/sql/064.png](https://yongnas.iptime.org/sql/064.png)
+![https://yongineer.duckdns.org/sql/064.png](https://yongineer.duckdns.org/sql/064.png)
 
 여기서 다음과 같은 조건에 맞춰 결과를 만드는 것을 생각해보자 
 
@@ -186,7 +186,7 @@ population 테이블로의 풀 스캔이 1회로 감소한 것을 확인할 수 
 2. 소속된 팀이 2개라면 해당 직원인 '2개를 겸무' 라는 문자열을 출력한다.
 3. 소속된 팀이 3개 이상이라면 해당 직원은 '3개 이상을 겸무'라는 문자열을 출력한다.
 
-![https://yongnas.iptime.org/sql/065.png](https://yongnas.iptime.org/sql/065.png)
+![https://yongineer.duckdns.org/sql/065.png](https://yongineer.duckdns.org/sql/065.png)
 
 ### UNION을 사용한 조건 분기
 
@@ -221,7 +221,7 @@ HAVING COUNT(*) >= 3
 
 ### UNION의 실행 계획
 
-![https://yongnas.iptime.org/sql/066.png](https://yongnas.iptime.org/sql/066.png)
+![https://yongineer.duckdns.org/sql/066.png](https://yongineer.duckdns.org/sql/066.png)
 
 3개의 쿼리를 머지하는 쿼리이므로 예상대로 employees테이블에 대한 접근도 3회이며 모두 테이블 풀 스캔을 수행하는 것을 확인할 수 있다.
 
@@ -240,7 +240,7 @@ GROUP BY emp_name;
 
 ### CASE 식을 사용한 조건 분기의 실행 계획
 
-![https://yongnas.iptime.org/sql/067.png](https://yongnas.iptime.org/sql/067.png)
+![https://yongineer.duckdns.org/sql/067.png](https://yongineer.duckdns.org/sql/067.png)
 
 `CASE`식을 사용하면 테이블에 접근 비용을 3/1로 줄일수 있다. 추가적으로 `GROUP BY`의 `HASH` 연산도 3/1로 줄어든다. 이를 가능하게 하는 것은 집약 결과(`COUNT` 함수의 리턴값)을 `CASE` 식의 입력으로 사용했기 때문이다. `COUNT` 또는 `SUM`과 같은 집약 함수의 결과는 1개의 레코드로 압축된다. 다르게 말하면 집약함수의 결과가 스칼라값이 되는 것이다. 따라서 `CASE`식의 매개변수에 집약함수를 넣을 수 있다.
 
@@ -265,13 +265,13 @@ SELECT col_3 FROM table_b WHERE col_4 = 'B';
 
 인덱스와 관련된 경우, `UNION`을 사용했을 때 좋은 인덱스(압축을 잘 하는 인덱스)를 사용하지만, 이외의 경우에는 테이블 풀 스캔이 발생한다면 `UNION`을 사용한 방법이 성능적으로 더 좋을 수 있다.
 
-![https://yongnas.iptime.org/sql/068.png](https://yongnas.iptime.org/sql/068.png)
+![https://yongineer.duckdns.org/sql/068.png](https://yongineer.duckdns.org/sql/068.png)
 
 three_elements 테이블에 저장된 레코드를 보면 레코드는 date, flg이라는 3개의 짝에서 하나의 짝에만 값이 있고, 다른 짝은 모두 `NULL`이다.
 
 이 테이블에서 date\_1 ~ date\_3이 특정 날짜 (예를 들어 2013년 11월 1일)를 값으로 갖고 있고 대칭되는 플래그 필드의 값이 '`T`'인 레코드를 선택한다고 가정하자.
 
-![https://yongnas.iptime.org/sql/069.png](https://yongnas.iptime.org/sql/069.png)
+![https://yongineer.duckdns.org/sql/069.png](https://yongineer.duckdns.org/sql/069.png)
 
 ### UNION을 사용한 방법
 
@@ -303,7 +303,7 @@ CREATE INDEX idx_3 ON three_elements (date_3, flg_3);
 
 이제 실행계획을 살펴보면 다음과 같다.
 
-![https://yongnas.iptime.org/sql/070.png](https://yongnas.iptime.org/sql/070.png)
+![https://yongineer.duckdns.org/sql/070.png](https://yongineer.duckdns.org/sql/070.png)
 
 3개의 `SELECT`구문 모두 idx\_1, idx\_2, idx\_3이라는 인덱스가 사용되는 것을 확인할 수 있다. 이렇게되면 three_elements테이블의 레코드 수가 많고, 각각의 `WHERE`구의 검색 조건에서 레코드 수를 많이 압축할수록, 테이블의 풀 스캔보다도 훨씬 빠른 접근 속도를 기대할 수 있다.
 
@@ -320,11 +320,11 @@ SELECT key, name, date_1, flg_1, date_2, flg_2, date_3, flg_3
 
 이러한 쿼리의 결과는 `UNION`을 사용했을 때와 같다. 하지만 실행 계획이 크게 다르다. (`Oracle`)
 
-![https://yongnas.iptime.org/sql/071.png](https://yongnas.iptime.org/sql/071.png)
+![https://yongineer.duckdns.org/sql/071.png](https://yongineer.duckdns.org/sql/071.png)
 
 `SELECT` 구문이 하나로 줄어들었기 때문에 three_elements테이블에 대한 접근이 1회로 줄었다. 하지만 이때 인덱스가 사용되지 않고, 그냥 테이블 풀 스캔이 수행된다. 이렇게 `WHERE`구문에서 `OR`을 사용하면 해당 필드에 부여된 인덱스를 사용할 수 없다.
 
-![https://yongnas.iptime.org/sql/072.png](https://yongnas.iptime.org/sql/072.png)
+![https://yongineer.duckdns.org/sql/072.png](https://yongineer.duckdns.org/sql/072.png)
 
 다만 `MySQL`에서는 `Index merge`가 수행되는데 테이블 풀 스캔보단 성능적으로는 더 낫지만 각각의 조건으로 검색한 데이터를 병합하는 과정이 생기기 때문에 인덱스만으로 연산을 먼저 수행하고 그 결과를 바탕으로 데이터를 가져오는게 더 효율적이다.
 
@@ -341,7 +341,7 @@ SELECT key, name, date_1, flg_1, date_2, flg_2, date_3, flg_3
 			IN ((date_1, flg_1), (date_2, flg_2), (date_3, flg_3));
 ```
 
-![https://yongnas.iptime.org/sql/073.png](https://yongnas.iptime.org/sql/073.png)
+![https://yongineer.duckdns.org/sql/073.png](https://yongineer.duckdns.org/sql/073.png)
 
 이는 다중 필드(multiple fields) 또는 행식(row expression)이라는 기능을 사용한 방법이다. `IN`의 매개변수로는 단순한 스칼라뿐만 아니라 이렇게 (a,b,c)와 같은 값의 리스트(배열)을 입력할 수도 있다.
 
@@ -359,7 +359,7 @@ SELECT key, name, date_1, flg_1, date_2, flg_2, date_3, flg_3
 								 ELSE NULL END = 'T';
 ```
 
-![https://yongnas.iptime.org/sql/073.png](https://yongnas.iptime.org/sql/073.png)
+![https://yongineer.duckdns.org/sql/073.png](https://yongineer.duckdns.org/sql/073.png)
 
 이 쿼리도 원하는 결과를 만들어 내나 실행 계획은 `OR`, `IN`을 사용할 때와 같다. 따라서 성능적으로 같은 문제를 안게된다.
 

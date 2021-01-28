@@ -2,11 +2,11 @@
 title: TIL.44) [NodeJS] nodemon개발 편의성 업그레이드 하기 (feat. 자동 서버 재시작)
 date: 2020-09-04 20:09:41
 category: NodeJS
-thumbnail: 'https://yongnas.iptime.org/node/nodejs.png'
+thumbnail: 'https://yongineer.duckdns.org/node/nodejs.png'
 draft: false
 ---
 
-![](https://yongnas.iptime.org/node/nodejs.png)
+![](https://yongineer.duckdns.org/node/nodejs.png)
 
 `Django`로 개발할 때는 코드 수정 시 서버가 자동으로 재시작 되어서 이게 불편할거라고는 생각도 못했는데 놀랍게도 `NodeJS`에서는 코드 수정과는 별개로 서버가 재시작 되지 않아 찾아보니 `nodemon`이라는 모듈이 있어야 한다.
 
@@ -58,7 +58,7 @@ npm install --save-dev nodemon
 
 이제 서버를 시작 하고 코드를 저장하게 되면 다음과 같이 서버 재시작 메시지가 보일것이다.
 
-![https://yongnas.iptime.org/node/til44_01.png](https://yongnas.iptime.org/node/til44_01.png)
+![https://yongineer.duckdns.org/node/til44_01.png](https://yongineer.duckdns.org/node/til44_01.png)
 
 > ⚠️만약 `Babel`을 사용한다면
 >

@@ -61,7 +61,7 @@ $ sudo systemctl enable gunicorn
 $ sudo systemctl status gunicorn.service
 ```
 
-![https://yongnas.iptime.org/aws/01.png](https://yongnas.iptime.org/aws/01.png)
+![https://yongineer.duckdns.org/aws/01.png](https://yongineer.duckdns.org/aws/01.png)
 
 만약 제대로 실행 되었다면 다음과 같이 Active 상태임을 확인 할 수 있다.
 
@@ -115,7 +115,7 @@ $ sudo service nginx restart
 $ sudo service nginx status
 ```
 
-![https://yongnas.iptime.org/aws/02.png](https://yongnas.iptime.org/aws/02.png)
+![https://yongineer.duckdns.org/aws/02.png](https://yongineer.duckdns.org/aws/02.png)
 
 `Nginx`역시 `service`에 등록하고 난 후 정상적으로 실행이 된다면 상태확인 시 `active`상태임을 확인 할 수 있다.
 
@@ -123,4 +123,4 @@ $ sudo service nginx status
 
 이제 그동안 사용하던 `port`없이 `http`포트(80 또는 생략가능)로 작성한 API를 호출해보자.
 
-![https://yongnas.iptime.org/aws/03.png](https://yongnas.iptime.org/aws/03.png)
+![https://yongineer.duckdns.org/aws/03.png](https://yongineer.duckdns.org/aws/03.png)

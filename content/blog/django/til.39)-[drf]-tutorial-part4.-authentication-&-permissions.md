@@ -2,11 +2,11 @@
 title: TIL.39) [DRF] Tutorial Part4. Authentication & Permissions
 date: 2020-08-27 06:08:97
 category: Django
-thumbnail: 'https://yongnas.iptime.org/django/drf.png'
+thumbnail: 'https://yongineer.duckdns.org/django/drf.png'
 draft: false
 ---
 
-![](https://yongnas.iptime.org/django/drf.png)
+![](https://yongineer.duckdns.org/django/drf.png)
 
 해당 내용은 Django REST Framework의 공식문서를 참고하여 작성되었으며. 해당 공식문서는 [여기](https://www.django-rest-framework.org/tutorial/4-authentication-and-permissions/)에서 확인 가능하다.
 
@@ -343,13 +343,13 @@ urlpatterns += [
 
 이제 브라우저를 다시 열고 페이지를 새로 고침 하면 오른쪽 상단에 'login' 버튼이 생긴것을 확인 할 수 있을 것이다.
 
-![https://yongnas.iptime.org/django/til39_1.png](https://yongnas.iptime.org/django/til39_1.png)
+![https://yongineer.duckdns.org/django/til39_1.png](https://yongineer.duckdns.org/django/til39_1.png)
 
 앞서 생성한 Superuser로 로그인 하면 다시 Code snippet을 생성 할 수 있다.
 
 몇개의 Code snippet을 생성 한 후 users endpoint로 이동하면 각 사용자가 생성한 Code snippet의 ID목록을 확인 할 수 있다.
 
-![https://yongnas.iptime.org/django/til39_2.png](https://yongnas.iptime.org/django/til39_2.png)
+![https://yongineer.duckdns.org/django/til39_2.png](https://yongineer.duckdns.org/django/til39_2.png)
 
 # Object level permissions
 
@@ -431,11 +431,11 @@ class UserDetail(generics.RetrieveAPIView):
 
 이제 브라우저를 다시 열면 `DELETE`와 `PUT`작업은 Code snippet을 생성한 사용자만이 가능한 것을 확인 할 수 있다.
 
-![https://yongnas.iptime.org/django/til39_3.png](https://yongnas.iptime.org/django/til39_3.png)
+![https://yongineer.duckdns.org/django/til39_3.png](https://yongineer.duckdns.org/django/til39_3.png)
 
 *로그인 하지 않은 사용자 or Code snippet의 작성자가 아닐때*
 
-![https://yongnas.iptime.org/django/til39_4.png](https://yongnas.iptime.org/django/til39_4.png)
+![https://yongineer.duckdns.org/django/til39_4.png](https://yongineer.duckdns.org/django/til39_4.png)
 
 *Code snippet의 작성자일때*
 

@@ -10,7 +10,7 @@ draft: false
 
 # DBMS 아키텍처 개요
 
-![https://yongnas.iptime.org/sql/042.png](https://yongnas.iptime.org/sql/042.png)
+![https://yongineer.duckdns.org/sql/042.png](https://yongineer.duckdns.org/sql/042.png)
 
 그림에서 위에 있는 것은 데이터베이스 사용자 (일반 사용자 또는 프로그래머)와의 인터페이스를 나타낸다 여기서 전달된 SQL구문은 중간에 있는 DBMS를 통해 다양한 처리를 수행한다. 그리고 저장 장치에 있는 데이터에 접근해서 데이터를 읽고 쓰게 된다.
 
@@ -121,7 +121,7 @@ DBMS에 어떤 장애가 발생해서 프로세스다운이 일어나면(즉, �
 
 ### 데이터 캐시와 로그 버퍼의 크기
 
-![https://yongnas.iptime.org/sql/043.png](https://yongnas.iptime.org/sql/043.png)
+![https://yongineer.duckdns.org/sql/043.png](https://yongineer.duckdns.org/sql/043.png)
 
 데이터 캐시와 로그 버퍼를 비교해보면 3개의 DBMS에서 공통으로 데이터 캐시에 비해 로그 버퍼의 초깃값이 괸장히 작다는 것을 알 수 있다.
 
@@ -173,7 +173,7 @@ RDB가 이렇게 대담하게 권한 이양을 감행한 데는 당연히 정당
 
 RDB에서 데이터 접근 절차를 결정하는 모듈은 쿼리 평가 엔진이라고 부른다. 쿼리 평가 엔진은 사용자로부터 입력받은 SQL구문(쿼리)을 처음 읽어들이는 모듈이기도 한다. 쿼리 평가 모듈은 추가로 파서 또는 옵티마이저오 ㅏ같은 여러 개의 서브 모듈로 구성된다.
 
-![https://yongnas.iptime.org/sql/044.png](https://yongnas.iptime.org/sql/044.png)
+![https://yongineer.duckdns.org/sql/044.png](https://yongineer.duckdns.org/sql/044.png)
 
 ### 파서(parser)
 
@@ -268,9 +268,9 @@ EXPLAIN [SQL구문]
 2. 인덱스 스캔의 실행 계획
 3. 간단한 테이블 결합의 실행 계획
 
-![https://yongnas.iptime.org/sql/047.png](https://yongnas.iptime.org/sql/047.png)
+![https://yongineer.duckdns.org/sql/047.png](https://yongineer.duckdns.org/sql/047.png)
 
-![https://yongnas.iptime.org/sql/046.png](https://yongnas.iptime.org/sql/046.png)
+![https://yongineer.duckdns.org/sql/046.png](https://yongineer.duckdns.org/sql/046.png)
 
 실행 계획의 출력 포맷이 완전히 같지는 않지만 공통적으로 나타나는 부분이 있다.
 
@@ -297,7 +297,7 @@ EXPLAIN [SQL구문]
 >
 예를 들어 Oracle에서는 SQL 구문의 실행 시간을 검색하는 방법(`DBMS_XPLAN.DISPLAY_CURSOR`)이 있는데 이 방법을 사용하면 조작마다 걸린 실행 시간을 출력할 수 있다. 예를들어 인덱스를 사용하는 SQL구문은 아래 그림처럼 실행계획이 나온다.
 >
-![https://yongnas.iptime.org/sql/048.png](https://yongnas.iptime.org/sql/048.png)
+![https://yongineer.duckdns.org/sql/048.png](https://yongineer.duckdns.org/sql/048.png)
 >
 각각의 필드는 다음과 같은 의미이다.
 >
@@ -315,11 +315,11 @@ EXPLAIN [SQL구문]
 
 ## 3. 인덱스 스캔의 실행 계획
 
-![https://yongnas.iptime.org/sql/049.png](https://yongnas.iptime.org/sql/049.png)
+![https://yongineer.duckdns.org/sql/049.png](https://yongineer.duckdns.org/sql/049.png)
 
-![https://yongnas.iptime.org/sql/050.png](https://yongnas.iptime.org/sql/050.png)
+![https://yongineer.duckdns.org/sql/050.png](https://yongineer.duckdns.org/sql/050.png)
 
-![https://yongnas.iptime.org/sql/051.png](https://yongnas.iptime.org/sql/051.png)
+![https://yongineer.duckdns.org/sql/051.png](https://yongineer.duckdns.org/sql/051.png)
 
 ### 조작 대상이 되는 레코드 수
 
@@ -335,7 +335,7 @@ EXPLAIN [SQL구문]
 
 간단하게 말해서 인덱스의 처리 비용이 완만하게 증가한다는 뜻으로 특정 데이터양(N)을 손익 분기점으로 인덱스 스캔이 풀 스캔보다도 효율적인 접근을 하게 된다는 것이다.
 
-![https://yongnas.iptime.org/sql/052.png](https://yongnas.iptime.org/sql/052.png)
+![https://yongineer.duckdns.org/sql/052.png](https://yongineer.duckdns.org/sql/052.png)
 
 ## 4. 간단한 테이블 결합의 실행 계획
 
@@ -347,9 +347,9 @@ SQL에서 지연이 일어나는 경우는 대부분 결합과 관련된 것이�
 
 **세번째는 Hash이다.** 결합 키를 해시값으로 맵핑하는 방법이다. 해시 테이블을 만들어야 하므로, 마찬가지로 작업용 메모리 영역을 필요로 한다.
 
-![https://yongnas.iptime.org/sql/053.png](https://yongnas.iptime.org/sql/053.png)
+![https://yongineer.duckdns.org/sql/053.png](https://yongineer.duckdns.org/sql/053.png)
 
-![https://yongnas.iptime.org/sql/054.png](https://yongnas.iptime.org/sql/054.png)
+![https://yongineer.duckdns.org/sql/054.png](https://yongineer.duckdns.org/sql/054.png)
 
 `Oracle`의 `Operation`필드를 보면 `NESTED LOOPS`라고 나오므로 어떤 알고리즘을 사용하고 있는 쉽게 알 수 있다. 마찬가지로 `PostgreSQL`에서도 `Nested Loop`이라고 나오며 `MySQL`에서는 `Extra`필드에 Using join buffer (hash join)이라고 나오는 걸로 보아 `Hash` 알고리즘을 선택하고 있다는 것을 알 수 있다.
 

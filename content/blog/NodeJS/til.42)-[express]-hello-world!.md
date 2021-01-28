@@ -2,11 +2,11 @@
 title: TIL.42) [Express] Hello world!
 date: 2020-09-04 01:09:48
 category: NodeJS
-thumbnail: 'https://yongnas.iptime.org/node/nodejs.png'
+thumbnail: 'https://yongineer.duckdns.org/node/nodejs.png'
 draft: false
 ---
 
-![](https://yongnas.iptime.org/node/nodejs.png)
+![](https://yongineer.duckdns.org/node/nodejs.png)
 
 # NPM으로 Express 설치하기
 
@@ -117,8 +117,8 @@ node index.js
 npm start
 ```
 
-![https://yongnas.iptime.org/node/til42_01.png](https://yongnas.iptime.org/node/til42_01.png)
+![https://yongineer.duckdns.org/node/til42_01.png](https://yongineer.duckdns.org/node/til42_01.png)
 
 이제 웹 브라우저를 열어 아까 지정한 포트로 접근하여 확인해보자.
 
-![https://yongnas.iptime.org/node/til42_02.png](https://yongnas.iptime.org/node/til42_02.png)
+![https://yongineer.duckdns.org/node/til42_02.png](https://yongineer.duckdns.org/node/til42_02.png)

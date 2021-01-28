@@ -13,7 +13,7 @@ draft: false
 - 부류
 - 동일한 범주에 속하는 대상들을 일정한 기준에 따라 나누어 놓은 것
 
-![](https://yongnas.iptime.org/python/01.png)
+![](https://yongineer.duckdns.org/python/01.png)
 
 - Car : Class
 - Lexus, BMW, Benz, Hyundai : Object
@@ -81,7 +81,7 @@ hyundai = Car("현대", "제네시스", 500)
 
 > **💡Class object가 `__init__` method에게 인자를 전달하는 과정**
  >
- >![](https://yongnas.iptime.org/python/02.png)
+ >![](https://yongineer.duckdns.org/python/02.png)
  >
  >```python
  >class Car:

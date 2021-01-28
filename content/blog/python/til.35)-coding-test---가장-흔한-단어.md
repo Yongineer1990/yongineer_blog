@@ -44,7 +44,7 @@ class Solution:
         return countword.most_common(1)[0][0]
 ```
 
-![https://yongnas.iptime.org/python/til35_1.png](https://yongnas.iptime.org/python/til35_1.png)
+![https://yongineer.duckdns.org/python/til35_1.png](https://yongineer.duckdns.org/python/til35_1.png)
 
 먼저 입력값에 구두점을 정규식을 이용하여 제거했다. (`re.sub()`) 그 다음 모두 소문자로 바꿔 주었다. (`lower()`) 
 

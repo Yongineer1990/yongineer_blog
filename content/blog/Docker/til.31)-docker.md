@@ -16,7 +16,7 @@ Docker는 가상화 기술이다. 가상화 컨테이너에 application 배포�
 
 # Hypercisor 가상화 VS Container 가상화
 
-![https://yongnas.iptime.org/docker/til30_1.png](https://yongnas.iptime.org/docker/til30_1.png)
+![https://yongineer.duckdns.org/docker/til30_1.png](https://yongineer.duckdns.org/docker/til30_1.png)
 
 ## Hypervisor
 

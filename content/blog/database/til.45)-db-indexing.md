@@ -14,7 +14,7 @@ index란 색인 기능이며 **원하는 결과를 빠르게 찾기** 위해 사
 
 그래서 데이터베이스에서 이러한 문제를 방지하고자 인덱스라는 기능을 지원하며 이 기능을 통해 검색 수행시 **어떤 값에 대해서도 같은 시간의 결과를 얻을 수 있는 균일성을 유지 할 수 있게 된다.**
 
-![https://yongnas.iptime.org/database/til45_03.png](https://yongnas.iptime.org/database/til45_03.png)
+![https://yongineer.duckdns.org/database/til45_03.png](https://yongineer.duckdns.org/database/til45_03.png)
 
 # DB index?
 
@@ -23,7 +23,7 @@ index란 색인 기능이며 **원하는 결과를 빠르게 찾기** 위해 사
 - 인덱스는 원본 테이블과 별도로 저장되며 **index로 설정한 컬럼값이 수정, 삭제 된다면 인덱스도 반영된다.**
 - Primary Key에는 데이터베이스가 자동으로 인덱스 기능을 설정하여 관리한다.
 
-![https://yongnas.iptime.org/database/til45_01.png](https://yongnas.iptime.org/database/til45_01.png)
+![https://yongineer.duckdns.org/database/til45_01.png](https://yongineer.duckdns.org/database/til45_01.png)
 
 ## 인덱싱한 테이블에서 어떻게 값을 찾을까?
 
@@ -39,7 +39,7 @@ index란 색인 기능이며 **원하는 결과를 빠르게 찾기** 위해 사
 
 ## B+Tree 알고리즘
 
-![https://yongnas.iptime.org/database/til45_02.png](https://yongnas.iptime.org/database/til45_02.png)
+![https://yongineer.duckdns.org/database/til45_02.png](https://yongineer.duckdns.org/database/til45_02.png)
 
 ### B+Tree 알고리즘의 구성
 
@@ -66,7 +66,7 @@ index란 색인 기능이며 **원하는 결과를 빠르게 찾기** 위해 사
 - 행 데이터를 인덱스로 지정한 열에 맞춰서 자동 정렬되어 있기 때문에 순차적 데이터를 접근 할때 유리하다.
 - 사전과 같이 내용 자체가 순서대로 정렬되어 있어 인덱스 자체가 내용과 같다.
 
-![https://yongnas.iptime.org/database/til45_04.gif](https://yongnas.iptime.org/database/til45_04.gif)
+![https://yongineer.duckdns.org/database/til45_04.gif](https://yongineer.duckdns.org/database/til45_04.gif)
 
 ## Non Clustered Index
 
@@ -74,4 +74,4 @@ index란 색인 기능이며 **원하는 결과를 빠르게 찾기** 위해 사
 - 데이터가 정렬되어 있지 않기 때문에 인덱스에 의해 원본 데이터까지 찾아가야 한다.
 - 찾아보기가 있는 일반 책과 같다.
 
-![https://yongnas.iptime.org/database/til45_05.gif](https://yongnas.iptime.org/database/til45_05.gif)
+![https://yongineer.duckdns.org/database/til45_05.gif](https://yongineer.duckdns.org/database/til45_05.gif)

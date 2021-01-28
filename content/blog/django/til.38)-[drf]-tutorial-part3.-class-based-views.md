@@ -2,11 +2,11 @@
 title: TIL.38) [DRF] Tutorial Part3. Class-based Views
 date: 2020-08-27 02:08:83
 category: Django
-thumbnail: 'https://yongnas.iptime.org/django/drf.png'
+thumbnail: 'https://yongineer.duckdns.org/django/drf.png'
 draft: false
 ---
 
-![](https://yongnas.iptime.org/django/drf.png)
+![](https://yongineer.duckdns.org/django/drf.png)
 
 해당 내용은 Django REST Framework의 공식문서를 참고하여 작성되었으며. 해당 공식문서는 [여기](https://www.django-rest-framework.org/tutorial/3-class-based-views/)에서 확인 가능하다.
 

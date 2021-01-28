@@ -22,7 +22,7 @@ INSERT INTO 테이블명 VALUES(값1, 값2 ... );
 - 값을 지정할 때는 열의 데이터 형식에 맞도록 지정
 - `INSERT`명령은 데이터가 클라이언트에서 서버로 전송되므로 반환되는 결과가 없음
 
-    ![https://yongnas.iptime.org/sql/til30_1.png](https://yongnas.iptime.org/sql/til30_1.png)
+    ![https://yongineer.duckdns.org/sql/til30_1.png](https://yongineer.duckdns.org/sql/til30_1.png)
 
 ## 2. 값을 저장할 열 지정하기
 
@@ -32,7 +32,7 @@ INSERT INTO 테이블명(열1, 열2 ... ) VALUES (값1, 값2 ... );
 
 - `INSERT INTO 테이블명`뒤에 `()`로 묶어 열명을 나열하고 `VALUES`구에 값을 지정할 경우 지정한 열과 동일한 개수로 값을 지정한다.
 
-    ![https://yongnas.iptime.org/sql/til30_2.png](https://yongnas.iptime.org/sql/til30_2.png)
+    ![https://yongineer.duckdns.org/sql/til30_2.png](https://yongineer.duckdns.org/sql/til30_2.png)
 
     *no 열과 a열만 지정해 행 추가하기*
 
@@ -42,13 +42,13 @@ INSERT INTO 테이블명(열1, 열2 ... ) VALUES (값1, 값2 ... );
 
 - 행을 추가할 때 유효한 값이 없는 상태로 두고 싶을 경우에는 `VALUES`구에서 `NULL`로 값을 지정할 수 있다.
 
-    ![https://yongnas.iptime.org/sql/til30_3.png](https://yongnas.iptime.org/sql/til30_3.png)
+    ![https://yongineer.duckdns.org/sql/til30_3.png](https://yongineer.duckdns.org/sql/til30_3.png)
 
 - 그러나 추가하려는 열에 `NULL`값을 허용하지 않는 `NOT NULL`제약이 걸려있다면 에러가 발생한다.
 - 테이블에 저장하는 데이터를 설정으로 제한하는 것을 통틀어 '제약'이라 한다.
 - 따라서 `NULL`을 허용하고 싶지 않다면 `NOT NULL`제약을 걸면 된다.
 
-    ![https://yongnas.iptime.org/sql/til30_4.png](https://yongnas.iptime.org/sql/til30_4.png)
+    ![https://yongineer.duckdns.org/sql/til30_4.png](https://yongineer.duckdns.org/sql/til30_4.png)
 
     *no 열에 3을 지정해 `NOT NULL`제약을 피해 행 추가*
 
@@ -59,13 +59,13 @@ INSERT INTO 테이블명(열1, 열2 ... ) VALUES (값1, 값2 ... );
 
 ### 명시적으로 저장하는 방법
 
-![https://yongnas.iptime.org/sql/til30_5.png](https://yongnas.iptime.org/sql/til30_5.png)
+![https://yongineer.duckdns.org/sql/til30_5.png](https://yongineer.duckdns.org/sql/til30_5.png)
 
 `VALUES`구에서 명시적으로 `DEFAULT`키워드를 사용하면 초기값이 저장된다.
 
 ### 암묵적으로 저장하는 방법
 
-![https://yongnas.iptime.org/sql/til30_6.png](https://yongnas.iptime.org/sql/til30_6.png)
+![https://yongineer.duckdns.org/sql/til30_6.png](https://yongineer.duckdns.org/sql/til30_6.png)
 
 `DEFAULT`를 저장할 열을 `INSERT`명령문에서 별도 지정하지 않으면 초기값이 저장된다.
 
@@ -84,7 +84,7 @@ DELETE FROM 테이블명 WHERE 조건식;
 DELETE FROM 테이블명;
 ```
 
-![https://yongnas.iptime.org/sql/til30_7.png](https://yongnas.iptime.org/sql/til30_7.png)
+![https://yongineer.duckdns.org/sql/til30_7.png](https://yongineer.duckdns.org/sql/til30_7.png)
 
 - 삭제는 행 단위로 수행되기 때문에 `DELETE no FROM sample41`과 같이 열을 지정하여 삭제할수는 없다.
 - `WHERE`구에서 조건식을 잘못 지정하면 의도하지 않은 데이터가 삭제되니 주의해야 한다.
@@ -93,7 +93,7 @@ DELETE FROM 테이블명;
 
 - `WHERE`구에서 대상이 되는 행을 검색하는 것은 `SELECT`명령에서도 `DELETE`명령에서도 같다.
 
-    ![https://yongnas.iptime.org/sql/til30_8.png](https://yongnas.iptime.org/sql/til30_8.png)
+    ![https://yongineer.duckdns.org/sql/til30_8.png](https://yongineer.duckdns.org/sql/til30_8.png)
 
 *앞선 예제에서 `WHERE`구를 `no = 1 OR no = 2`로 바꾸면 열이 1이나 2인 행을 삭제한다.*
 
@@ -116,11 +116,11 @@ UPDATE 테이블명 SET 열1 = 값1, 열2 = 값2, ... WHERE 조건식
 - 값은 상수로 표기하며 자료형에 맞는 값을 지정해야 한다.
 - 갱신해야할 열과 값이 복수인경우 `,`로 구분한다.
 
-    ![https://yongnas.iptime.org/sql/til30_9.png](https://yongnas.iptime.org/sql/til30_9.png)
+    ![https://yongineer.duckdns.org/sql/til30_9.png](https://yongineer.duckdns.org/sql/til30_9.png)
 
 ## 2. UPDATE로 갱신할 경우 주의사항
 
-![https://yongnas.iptime.org/sql/til30_10.png](https://yongnas.iptime.org/sql/til30_10.png)
+![https://yongineer.duckdns.org/sql/til30_10.png](https://yongineer.duckdns.org/sql/til30_10.png)
 
 만약 위와 같은 테이블에서 아래의 명령을 수행하면 어떻게 될까?
 
@@ -130,7 +130,7 @@ UPDATE sample41 SET no=no+1;
 
 `WHERE`구가 지정되어 있지 않으므로 대상은 모든 행이된다. `SET`구에서 `no`열의 값을 갱신하는데 갱신후의 값은 원래 값에서 1을 더한 결과가 된다.
 
-![https://yongnas.iptime.org/sql/til30_11.png](https://yongnas.iptime.org/sql/til30_11.png)
+![https://yongineer.duckdns.org/sql/til30_11.png](https://yongineer.duckdns.org/sql/til30_11.png)
 
 이때 해당 열이 갱신 대상이 되는 열이라 해도 상관없이 갱신되는 것을 알 수 있다. 갱신은 행 단위로 처리되므로 '현재의 no값'은 그 행이 갱신되기 전의 값에 해당한다.
 
@@ -156,13 +156,13 @@ UPDATE sample41 SET a = no, no = no+1; -> 2
 
 위와 같은 명령이 있을때 데이터베이스 마다 처리 방식이 달라진다. MySQL에서는 두 값이 다른 결과값으로 나오지만 Oracle에서는 같은 결과 값이 나온다.
 
-![https://yongnas.iptime.org/sql/til30_12.png](https://yongnas.iptime.org/sql/til30_12.png)
+![https://yongineer.duckdns.org/sql/til30_12.png](https://yongineer.duckdns.org/sql/til30_12.png)
 
 *명령1️⃣ 실행*
 
 1️⃣명령 실행시 `no`열과 `a`열이 서로 같아진다. `no`열의 값에 1을 더하여 no 열에 저장한 뒤, 그 값이 다시 `a`열에 대입되기 때문이다.
 
-![https://yongnas.iptime.org/sql/til30_13.png](https://yongnas.iptime.org/sql/til30_13.png)
+![https://yongineer.duckdns.org/sql/til30_13.png](https://yongineer.duckdns.org/sql/til30_13.png)
 
 *명령2️⃣ 실행*
 
@@ -178,7 +178,7 @@ UPDATE 테이블명 SET 열 = NULL;
 
 - `NULL`로 갱신하는 것을 보통 'NULL 초기화'라고 한다.
 
-    ![https://yongnas.iptime.org/sql/til30_14.png](https://yongnas.iptime.org/sql/til30_14.png)
+    ![https://yongineer.duckdns.org/sql/til30_14.png](https://yongineer.duckdns.org/sql/til30_14.png)
 
 - 단, `NOT NULL`제약이 설정되어 있는 열은 `NULL`이 허용되지 않는다.
 

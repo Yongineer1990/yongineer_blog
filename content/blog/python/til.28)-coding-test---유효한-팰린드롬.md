@@ -55,7 +55,7 @@ class Solution:
 
 ## 결과
 
-![https://yongnas.iptime.org/python/1.png](https://yongnas.iptime.org/python/1.png)
+![https://yongineer.duckdns.org/python/1.png](https://yongineer.duckdns.org/python/1.png)
 
 # 풀이
 
@@ -78,7 +78,7 @@ class Solution:
         return True
 ```
 
-![https://yongnas.iptime.org/python/2.png](https://yongnas.iptime.org/python/2.png)
+![https://yongineer.duckdns.org/python/2.png](https://yongineer.duckdns.org/python/2.png)
 
 Runtime은 내 해결방식과 비슷한거 같은데 전처리 한 문자를 담은 `strs`변수의 자료형을 `Deque`로 선언했다.
 
@@ -86,11 +86,11 @@ Runtime은 내 해결방식과 비슷한거 같은데 전처리 한 문자를 �
 
 `Double Ended Queue`의 줄임말로 양쪽 끝을 모두 추출할 수 있는, 큐를 일반화한 형태의 추상 자료형(ADT)이다.
 
-![https://yongnas.iptime.org/python/deque.jpeg](https://yongnas.iptime.org/python/deque.jpeg)
+![https://yongineer.duckdns.org/python/deque.jpeg](https://yongineer.duckdns.org/python/deque.jpeg)
 
 `stack`과 `queue`의 특징을 모두 갖고 있다. 이 추상 자료형(ADT)의 구현은 배열이나 연결 리스트 모두 가능하지만, 특히 이중 연결 리스트 (Doubly Linked List)로 구현하는게 가장 좋다.
 
-![https://yongnas.iptime.org/python/doubly_linked_list.png](https://yongnas.iptime.org/python/doubly_linked_list.png)
+![https://yongineer.duckdns.org/python/doubly_linked_list.png](https://yongineer.duckdns.org/python/doubly_linked_list.png)
 
 이중 연결 리스트로 구현하면 양쪽으로 `head`와 `tail`이라는 이름의 두 포인터를 갖고 잇다가 새로운 아이템이 추가될 때마다 앞쪽 또는 뒤쪽으로 연결시켜 주기만 하면 된다. 당연히 연결 후에는 포인터를 이동하면 된다.
 
@@ -117,7 +117,7 @@ class Solution:
         return s == s[::-1]
 ```
 
-![https://yongnas.iptime.org/python/3.png](https://yongnas.iptime.org/python/3.png)
+![https://yongineer.duckdns.org/python/3.png](https://yongineer.duckdns.org/python/3.png)
 
 일단 코드가 굉장히 간결하다.
 
@@ -129,11 +129,11 @@ class Solution:
 
 파이썬에서는 문자열 슬라이싱 기능을 제공하며 내부적으로 매우 빠르게 동작한다. **문자열을 조작할 때는 항상 슬라이싱을 우선으로 사용하는 편이 속도 개선에 유리**하다. 문자열을 별도로 리스트로 매핑하는 등의 처리는 데이터 구조를 다루는 입장에서 좋은 방법이지만, **별도 자료형으로 매핑하는 과정에서 상당한 연산 비용이 필요하므로 전체적인 속도에서는 오히려 손해를 볼 수 있다.**
 
-![httpss://yongnas.iptime.org/python/4.png](https://yongnas.iptime.org/python/4.png)
+![httpss://yongineer.duckdns.org/python/4.png](https://yongineer.duckdns.org/python/4.png)
 
 ### 문자열 슬라이싱 해보기
 
-![https://yongnas.iptime.org/python/5.png](https://yongnas.iptime.org/python/5.png)
+![https://yongineer.duckdns.org/python/5.png](https://yongineer.duckdns.org/python/5.png)
 
 ```python
 s = '안녕하세요'

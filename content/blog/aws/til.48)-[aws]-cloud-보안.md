@@ -59,7 +59,7 @@ draft: false
 
 # 데이터 관리 책임, 누구에게 있는가?
 
-![https://yongnas.iptime.org/aws/til48_01.png](https://yongnas.iptime.org/aws/til48_01.png)
+![https://yongineer.duckdns.org/aws/til48_01.png](https://yongineer.duckdns.org/aws/til48_01.png)
 
 > 💡 AWS와 고객의 **공동 책임**
 
@@ -95,7 +95,7 @@ draft: false
 
 ## Identity and Access Management (IAM)
 
-![https://yongnas.iptime.org/aws/til48_03.png](https://yongnas.iptime.org/aws/til48_03.png)
+![https://yongineer.duckdns.org/aws/til48_03.png](https://yongineer.duckdns.org/aws/til48_03.png)
 
 > 💡 사용자의 AWS서비스와 리소스에 대한 **액세스**를 안전하게 통제하며 **접근 권한과 인증 등을 중앙 관리**하는 서비스
 
@@ -115,7 +115,7 @@ draft: false
 
 ## Cognito
 
-![https://yongnas.iptime.org/aws/til48_02.png](https://yongnas.iptime.org/aws/til48_02.png)
+![https://yongineer.duckdns.org/aws/til48_02.png](https://yongineer.duckdns.org/aws/til48_02.png)
 
 > 💡 Google, Facebook 및 Amazon과 같은 **자격 증명 공급자 활용 및 자체 자격 증명 솔루션**을 사용하여 **사용자 인증을 간편하고 안전하게 관리**하는 서비스
 
@@ -125,7 +125,7 @@ draft: false
 
 ## Security Group
 
-![https://yongnas.iptime.org/aws/til48_04.jpg](https://yongnas.iptime.org/aws/til48_04.jpg)
+![https://yongineer.duckdns.org/aws/til48_04.jpg](https://yongineer.duckdns.org/aws/til48_04.jpg)
 
 > 💡 하나 이상의 인스턴스에 대한 트래픽 규칙의 묶음을 정의하며 보안 그룹에 있는 **인스턴스의 트래픽을 제어하는 방화벽 역할**을 수행한다.
 
@@ -134,7 +134,7 @@ draft: false
 
 ## Security Group 구성
 
-![https://yongnas.iptime.org/aws/til48_05.png](https://yongnas.iptime.org/aws/til48_05.png)
+![https://yongineer.duckdns.org/aws/til48_05.png](https://yongineer.duckdns.org/aws/til48_05.png)
 
 ### Web Server
 
@@ -153,7 +153,7 @@ draft: false
 
 ## AMI 보안
 
-![https://yongnas.iptime.org/aws/til48_06.gif](https://yongnas.iptime.org/aws/til48_06.gif)
+![https://yongineer.duckdns.org/aws/til48_06.gif](https://yongineer.duckdns.org/aws/til48_06.gif)
 
 - 가상 인스턴스의 기본이 되는 이미지인 AMI(Amazon Machine Image)를 주기적으로 패치하여 이미지에 최신 보안을 적용한다.
 - 새로운 패치가 적용된 AMI로 재배포하여 어플리케이션의 정상동작 유무를 확인하고 모든 인스턴스에 적용하도록 한다.
@@ -161,7 +161,7 @@ draft: false
 
 ## Inspector
 
-![https://yongnas.iptime.org/aws/til48_07.png](https://yongnas.iptime.org/aws/til48_07.png)
+![https://yongineer.duckdns.org/aws/til48_07.png](https://yongineer.duckdns.org/aws/til48_07.png)
 
 > 💡 어플리케이션의 **취약점과 모범 사례등을 자동으로 평가**하여 보안 및 규정 준수를 개선시키도록 지원하는 서비스
 
@@ -185,7 +185,7 @@ draft: false
 
 ## VPC
 
-![https://yongnas.iptime.org/aws/til48_08.png](https://yongnas.iptime.org/aws/til48_08.png)
+![https://yongineer.duckdns.org/aws/til48_08.png](https://yongineer.duckdns.org/aws/til48_08.png)
 
 > 💡 **분리된 가상 네트워크 블록**이며 사용자가 직접 네트워크 구성 토폴로지를 정의하여 IP 주소 범위, 라우팅 테이블, 게이트웨이 및 보안 설정을 커스텀하게 구성 가능하다.
 
@@ -204,7 +204,7 @@ draft: false
 
 ## WAF
 
-![https://yongnas.iptime.org/aws/til48_09.png](https://yongnas.iptime.org/aws/til48_09.png)
+![https://yongineer.duckdns.org/aws/til48_09.png](https://yongineer.duckdns.org/aws/til48_09.png)
 
 > 💡 일반적인 **웹 취약점 공격**으로부터 웹 어플리케이션을 보호하는 목적을 가진 **웹 어플리케이션 방화벽**이다.
 

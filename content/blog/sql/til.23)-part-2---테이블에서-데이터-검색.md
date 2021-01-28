@@ -16,7 +16,7 @@ SELECT * FROM 테이블명;
 
 ## 1. 'SELECT * FROM 테이블명' 실행하기
 
-![](https://yongnas.iptime.org/sql/6.png)
+![](https://yongineer.duckdns.org/sql/6.png)
 
 - `SELECT`와 `*`그리고 `FROM`사이에는 Space를 넣어 구분
 - `FROM`과 `sample21`사이에도 Space가 필요
@@ -24,7 +24,7 @@ SELECT * FROM 테이블명;
 
 > 만약 `;`을 붙이지 않고 명령 실행 시 아직 입력 중인 것으로 간주 된다.
 >
-![](https://yongnas.iptime.org/sql/7.png)
+![](https://yongineer.duckdns.org/sql/7.png)
 
 ## 2. SELECT 명령 구문
 
@@ -179,7 +179,7 @@ SELECT 열 FROM 테이블명 WHERE 조건식;
 
 ### WHERE 구
 
-![](https://yongnas.iptime.org/sql/8.png)
+![](https://yongineer.duckdns.org/sql/8.png)
 
 - 조건식 : 열과 연산자, 상수로 구성되는 식
 - 조건식에 일치하는 행만 `SELECT`의 결과로 반환
@@ -193,13 +193,13 @@ SELECT 열 FROM 테이블명 WHERE 조건식;
 
 ### 값이 서로 다른 경우 '<>'
 
-![](https://yongnas.iptime.org/sql/9.png)
+![](https://yongineer.duckdns.org/sql/9.png)
 
 - `<>`연산자는 값이 서로 다른 경우 참이 되는 조건식
 
 ## 3. 문자열형의 상수
 
-![](https://yongnas.iptime.org/sql/10.png)
+![](https://yongineer.duckdns.org/sql/10.png)
 
 - **싱글쿼트(`' '`)로 둘러싸 표기**
 - 날짜시간형의 경우에도 `' '`로 둘러싸 표기하며 이때 연월일은 하이픈(`-`)으로 구분하고 시각의 시분초는 콜론(`:`)으로 구분하여 표기
@@ -212,7 +212,7 @@ SELECT 열 FROM 테이블명 WHERE 조건식;
 
 ### IS NULL
 
-![](https://yongnas.iptime.org/sql/11.png)
+![](https://yongineer.duckdns.org/sql/11.png)
 
 - `IS NULL`을 사용하여 검색
 - 반대로 `NULL`이 아닌 값을 행을 검색할 때는 `IS NOT NULL`
@@ -234,11 +234,11 @@ SELECT 열 FROM 테이블명 WHERE 조건식;
 NOT 조건식1
 ```
 
-![](https://yongnas.iptime.org/sql/and_or_not.png)
+![](https://yongineer.duckdns.org/sql/and_or_not.png)
 
 ## 1. AND로 조합하기
 
-![](https://yongnas.iptime.org/sql/12.png)
+![](https://yongineer.duckdns.org/sql/12.png)
 
 - **좌우의 식이 모두 참일 경우** AND연산자는 참을 반환한다.
 - '및'에 해당
@@ -247,7 +247,7 @@ NOT 조건식1
 
 ## 2. OR로 조합하기
 
-![](https://yongnas.iptime.org/sql/13.png)
+![](https://yongineer.duckdns.org/sql/13.png)
 
 - **어느 쪽이든 조건을 만족하면 결과는 참이 된다.**
 - '또는'에 해당
@@ -279,7 +279,7 @@ SELECT * FROM sample24 WHERE a=1 OR a=2 AND b=1 OR b=2;
 
 그러나 앞서 AND연산자 예시의 결과와는 다른 것을 확인 할 수 있다. 
 
-![](https://yongnas.iptime.org/sql/14.png)
+![](https://yongineer.duckdns.org/sql/14.png)
 
 이는 **연산자의 계산 우선 순위가 다르기 때문**이다.
 
@@ -296,7 +296,7 @@ SELECT * FROM sample24 WHERE a=1 OR a=2 AND b=1 OR b=2;
 SELECT * FROM sample24 WHERE (a=1 OR a=2) AND (b=1 OR b=2);
 ```
 
-![](https://yongnas.iptime.org/sql/15.png)
+![](https://yongineer.duckdns.org/sql/15.png)
 
 - 일반적으로 `OR`조건식은 괄호로 묶어 지정하는 경우가 많다.
 
@@ -304,7 +304,7 @@ SELECT * FROM sample24 WHERE (a=1 OR a=2) AND (b=1 OR b=2);
 
 ## 4. NOT으로 조합
 
-![](https://yongnas.iptime.org/sql/16.png)
+![](https://yongineer.duckdns.org/sql/16.png)
 
 - 단항 연산자
 - 조건식의 반대 값을 반환
@@ -336,7 +336,7 @@ SELECT * FROM sample24 WHERE (a=1 OR a=2) AND (b=1 OR b=2);
 
 'SQL'이라는 문자를 포함한 데이터를 검색한다.
 
-![](https://yongnas.iptime.org/sql/17.png)
+![](https://yongineer.duckdns.org/sql/17.png)
 
 하지만 `no`가 3인 행에도 `text`에 'SQL'이 포함되어 있으나 검색되지 않은걸 알 수 있는데 이는 시작문자가 'SQL'이 아니기 때문이다. 
 
@@ -346,7 +346,7 @@ SELECT * FROM sample24 WHERE (a=1 OR a=2) AND (b=1 OR b=2);
 SELECT * FROM sample25 WHERE text LIKE '%SQL%';
 ```
 
-![](https://yongnas.iptime.org/sql/18.png)
+![](https://yongineer.duckdns.org/sql/18.png)
 
 여기서 핵심은 메타문자 %가 빈 문자열과도 매치 되는 것이다. `no`의 값 1번의 행의 `text`의 경우 'SQL'앞에 `%`와 매치되는 문자열은 없는데도 검색이 되었다.
 
@@ -372,7 +372,7 @@ SELECT * FROM sample25 WHERE text LIKE '%SQL%';
 WHERE text LIKE '%\%%';
 ```
 
-![](https://yongnas.iptime.org/sql/19.png)
+![](https://yongineer.duckdns.org/sql/19.png)
 
 - 맨 앞의 `%`는 메타문자
 - 그 다음 `%`는 앞에 `\`가 있어 이스케이프 되어 일반 문자 '%"가 되었다.

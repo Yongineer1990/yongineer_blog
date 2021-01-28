@@ -48,7 +48,7 @@ class Solution:
         return char + digit
 ```
 
-![https://yongnas.iptime.org/python/til34_1.png](https://yongnas.iptime.org/python/til34_1.png)
+![https://yongineer.duckdns.org/python/til34_1.png](https://yongineer.duckdns.org/python/til34_1.png)
 
 `logs`의 각 요소를 `split()`함수로 분리 한 뒤 그 첫번째 값을 키로 하는 딕셔너리 형태로 저장한 다음 해당 키의 값이 숫자면 (`isdigit()`) `digit`이라는 빈 리스트에 저장하고 문자라면 `char`라는 빈 리스트에 하나씩 저장한다.
 

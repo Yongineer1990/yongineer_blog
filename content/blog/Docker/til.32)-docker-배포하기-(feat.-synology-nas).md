@@ -10,7 +10,7 @@ draft: false
 
 Django로 생성된 프로젝트를 Docker로 배포하는 튜토리얼이다. 다만 몇일전 부터 AWS의 Free Tier에 한계가 다다랐다는 압박 메일이 날라왔고 울며 겨자먹기로 보유하고 있던 시놀로지 나스에 도커를 올려보기로 했다.
 
-![https://yongnas.iptime.org/docker/til31_3.png](https://yongnas.iptime.org/docker/til31_3.png)
+![https://yongineer.duckdns.org/docker/til31_3.png](https://yongineer.duckdns.org/docker/til31_3.png)
 
 *너무 무서운것...*
 
@@ -115,7 +115,7 @@ $ (sudo) docker build -t yongineer/chanel_backend:0.1.0 .
 $ (sudo) docker images
 ```
 
-![https://yongnas.iptime.org/docker/til31_1.png](https://yongnas.iptime.org/docker/til31_1.png)
+![https://yongineer.duckdns.org/docker/til31_1.png](https://yongineer.duckdns.org/docker/til31_1.png)
 
 ## 실행해보기
 
@@ -129,7 +129,7 @@ $ (sudo) docker run --name chanel -d -p PORT:PORT yongineer/chanel_backend:0.1.0
 $ (sudo) docker ps
 ```
 
-![https://yongnas.iptime.org/docker/til31_2.png](https://yongnas.iptime.org/docker/til31_2.png)
+![https://yongineer.duckdns.org/docker/til31_2.png](https://yongineer.duckdns.org/docker/til31_2.png)
 
 만약 정상적으로 실행되지 않았다면 에러가 발생했을 것이다.
 
@@ -199,7 +199,7 @@ $ (sudo) docker push yongineer/chanel_backend:0.1.0
 
 작업이 완료 된 후 도커허브에 있는 자신의 Repository에 업로드 된 것을 확인할 수 있다.
 
-![https://yongnas.iptime.org/docker/til31_4.png](https://yongnas.iptime.org/docker/til31_4.png)
+![https://yongineer.duckdns.org/docker/til31_4.png](https://yongineer.duckdns.org/docker/til31_4.png)
 
 > ⚠️ Docker hub는 Public repository는 무제한이지만 Private repository는 계정당 1개 무료로 제공된다.
 
@@ -209,7 +209,7 @@ $ (sudo) docker push yongineer/chanel_backend:0.1.0
 
 일단 위에서 언급한 Linux 설치 방법으로 설치할 수 있지만 시놀로지 패키지 센터에서 도커를 받아서 설치 할 수있다.
 
-![https://yongnas.iptime.org/docker/til31_5.png](https://yongnas.iptime.org/docker/til31_5.png)
+![https://yongineer.duckdns.org/docker/til31_5.png](https://yongineer.duckdns.org/docker/til31_5.png)
 
 ## Docker hub에서 이미지 pull 받기
 
@@ -237,15 +237,15 @@ $ (sudo) docker run --name chanel -d -p PORT:PORT yongineer/chanel_backend:0.1.0
 
 정상적으로 실행이 됐다면 아까 언급한 `$ (sudo) docker ps`명령으로 확인 할 수 있고 DSM에서 도커 어플리케이션을 실행하면 다음과 같이 나오는 것을 볼 수 있다.
 
-![https://yongnas.iptime.org/docker/til31_6.png](https://yongnas.iptime.org/docker/til31_6.png)
+![https://yongineer.duckdns.org/docker/til31_6.png](https://yongineer.duckdns.org/docker/til31_6.png)
 
 ## Test 해보기
 
 도커 컨테이너가 실행되었으면 요청과 응답이 잘 되는지 확인해보자
 
-![https://yongnas.iptime.org/docker/til31_7.png](https://yongnas.iptime.org/docker/til31_7.png)
+![https://yongineer.duckdns.org/docker/til31_7.png](https://yongineer.duckdns.org/docker/til31_7.png)
 
-![https://yongnas.iptime.org/docker/til31_8.png](https://yongnas.iptime.org/docker/til31_8.png)
+![https://yongineer.duckdns.org/docker/til31_8.png](https://yongineer.duckdns.org/docker/til31_8.png)
 
 굿, 이제 AWS의 무서운 메일을 받지 않아도 될 거 같다 ...
 
