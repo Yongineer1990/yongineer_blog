@@ -1,7 +1,7 @@
 ---
 title: Django에서 MongoDB 사용해보기
 date: 2021-02-07 22:02:46
-category: django
+category: Django
 thumbnail: ../TIL/images/django.png
 draft: false
 ---
