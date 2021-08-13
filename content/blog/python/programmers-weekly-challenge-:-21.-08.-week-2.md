@@ -43,6 +43,7 @@ draft: false
 
 ### 입출력 예시
 <div class="page-body"><table class="collection-content"><thead><tr><th>scores</th><th>result</th></tr></thead><tbody><tr id="7ef23a2c-1805-4db9-ae67-188726b3049e"><td class="cell-title"><a href="https://www.notion.so/100-90-98-88-65-50-45-99-85-77-47-88-95-80-67-61-57-100-80-65-24-90-94-75-65-7ef23a2c18054db9ae67188726b3049e">[[100,90,98,88,65],[50,45,99,85,77],[47,88,95,80,67],[61,57,100,80,65],[24,90,94,75,65]]</a></td><td class="cell-M\rN"><code>"FBABD"</code></td></tr><tr id="929e66e6-8e97-4f60-ae57-dbb09e008752"><td class="cell-title"><a href="https://www.notion.so/50-90-50-87-929e66e68e974f60ae57dbb09e008752">[[50,90],[50,87]]</a></td><td class="cell-M\rN"><code>"DA"</code></td></tr><tr id="a58d7d35-f1b7-46e4-bac8-e3c6fc8eeb57"><td class="cell-title"><a href="https://www.notion.so/70-49-90-68-50-38-73-31-100-a58d7d35f1b746e4bac8e3c6fc8eeb57">[[70,49,90],[68,50,38],[73,31,100]]</a></td><td class="cell-M\rN"><code>"CFD"</code></td></tr></tbody></table></div>
+
 # 풀이
 
 ```python
