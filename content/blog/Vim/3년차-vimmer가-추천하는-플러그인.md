@@ -1,7 +1,7 @@
 ---
 title: 3년차 Vimmer가 추천하는 플러그인
 date: 2023-02-19 06:02:40
-category: vim
+category: Vim
 thumbnail: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Icon-Vim.svg/1200px-Icon-Vim.svg.png'
 draft: false
 ---
